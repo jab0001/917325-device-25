@@ -8,11 +8,10 @@
     <header class="header">
       <nav class="header-navigation">
         <img src="img/logo-device.svg" width="163" height="35" alt="logo device">
-        <!--<form>
-          <input class="search-main" type="search" value="Поиск по сайту">
-        <button class="search-button" type="submit"><img src="img/search.svg"></button>
+        <form>
+          <button class="search-button" type="submit" for="search-text"><img src="img/search.svg"></button>
+          <input class="search-main" type="search" id="search-text" placeholder="Поиск по сайту">
         </form>
-        -->
         <ul class="navigation-main">
             <li class="login-enter">
               <a href="login-enter.html">Войти</a>
@@ -24,9 +23,40 @@
               <a href="myitems.html">Корзина</a>
             </li>
         </ul>
+        <!--<section class="catalog-item-header">
+          <label for="items-catalog">Каталог товаров</label>
+              <select name="items" id="items-catalog">
+                <option value="1">Виртуальная реальность</option>
+                <option value="2">Моноподы для селфи</option>
+                <option value="3">Экшн-камеры</option>
+                <option value="4">Фитнес-браслеты</option>
+                <option value="5">Умные часы</option>
+                <option value="6">Квадрокоптеры</option>
+        </select>
+      -->
         <ul class="site-navigation">
           <li>
-            <a href="catalog.html">Каталог товаров</a>
+            <button name="items-catalog" type="button">Каталог товаров</button>
+            <ul class="item-catalog-class">
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="delivery.html">Доставка</a>
@@ -114,6 +144,47 @@
           <a href="https://htmlacademy.ru"><img src="img/logo-html.svg" width="27" height="35"></a>
       </div>
     </footer>
-
+    <section class="modal modal-question">
+      <h2 class="vissualy-hidden">
+        Информация для обратной связи
+      </h2>
+      <form class="question-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="question-name" for="user-question">
+            Ваше имя:
+          </label>
+          <input class="question-icon-user" id="user-question" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="question-email" for="user-email">
+            Ваш e-mail:
+          </label>
+          <input class="login-icon-password" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+        </p>
+        <p class="login-password-info">
+          <label class="question-text" for="user-question-text">
+            Текст письма:
+          </label>
+          <input type="text" name="user-question-text" id="user-question-text" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">
+          Отправить
+        </button>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
+    </section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <p>
+          <img src="img/map.jpg" width="960" height="559" alt="Адрес компании: г.Москва ул.строителей, 15">
+        </p>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </section>
   </body>
 </html>
