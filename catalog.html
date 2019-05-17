@@ -10,11 +10,10 @@
                     <a href="index.html">
                         <img src="img/logo-device.svg" width="163" height="35" alt="logo device">
                     </a>
-                  <!--<form>
-                    <input class="search-main" type="search" value="Поиск по сайту">
-                  <button class="search-button" type="submit"><img src="img/search.svg"></button>
-                  </form>
-                  Это наверное оборачивается в форму?-->
+                    <form>
+                        <button class="search-button" type="submit" for="search-text"><img src="img/search.svg"></button>
+                        <input class="search-main" type="search" id="search-text" placeholder="Поиск по сайту">
+                    </form>
                   <ul class="navigation-main">
                       <li class="logged">
                           <a href="user.html">Валентин Петухов</a>
@@ -31,7 +30,27 @@
                   </ul>
                   <ul class="site-navigation">
                     <li class="site-navigation-current">
-                        <a href="catalog.html">Каталог товаров</a>
+                        <button name="items-catalog" type="button">Каталог товаров</button>
+                        <ul class="item-catalog-class">
+                            <li>
+                                <a href="#">Виртуальная реальность</a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">Моноподы для селфи</a>
+                            </li>
+                            <li>
+                                <a href="#">Экшн-камеры</a>
+                            </li>
+                            <li>
+                                <a href="#">Фитнес-браслеты</a>
+                            </li>
+                            <li>
+                                <a href="#">Умные часы</a>
+                            </li>
+                            <li>
+                                <a href="#">Квадрокоптеры</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="about-delivery">
                         <a href="delivery.html">Доставка</a>
@@ -61,7 +80,49 @@
                 </ul>
                 <section class="filters">
                         <h2 class="visually-hidden">Фильтр товаров</h2>
-                        <!-- Здесь будет форма -->
+                        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                            <fieldset>
+                              <legend>Цвет</legend>
+                              <ul>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color" id="color-black" checked>
+                                  <label for="color-black">Черный</label>
+                                </li>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color" id="color-white">
+                                  <label for="color-white">Белый</label>
+                                </li>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color" id="color-blue" checked>
+                                  <label for="color-blue">Синий</label>
+                                </li>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color" id="color-red" checked>
+                                  <label for="color-red">Красный</label>
+                                </li>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color" id="color-pink">
+                                  <label for="color-pink">Розовый</label>
+                                </li>
+                              </ul>
+                            </fieldset>
+                            <fieldset>
+                              <legend>Bluetooth</legend>
+                              <ul>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-Availability" value="have" id="filter-have" checked>
+                                  <label for="filter-have">Есть</label>
+                                </li>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-Availability" value="donthave" id="filter-donthave">
+                                  <label for="filter-donthave">Нет</label>
+                                </li>
+                              </ul>
+                            </fieldset>
+                            <button type="submit" class="filter-button button">
+                              Показать
+                            </button>
+                          </form>
                 </section>
                 <section class="catalog">
                         <h2 class="visually-hidden">Список моноподов для селфи</h2>
