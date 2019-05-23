@@ -135,6 +135,7 @@ a {
 .contacts-map p {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
+    line-height:2;
     text-align:left;
     font-weight:300;
     color:#464646;
