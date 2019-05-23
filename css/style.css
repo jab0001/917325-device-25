@@ -3,14 +3,12 @@ font-family: "Gilroy";
     src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"); 
     font-style: normal; 
     font-weight: normal; 
+}
+@font-face {
 font-family: "GilroyLight";
     src: url("../fonts/web/gilroylight.woff2") format("woff2"); 
     font-style: normal; 
     font-weight: normal; 
-
-
-
-
 }
 
 body {
@@ -137,7 +135,6 @@ a {
 .contacts-map p {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
-    line-height:2px;
     text-align:left;
     font-weight:300;
     color:#464646;
