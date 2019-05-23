@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body {
+    padding:0;
+    margin:0;
+}
