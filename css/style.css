@@ -96,6 +96,9 @@ a {
 .vissualy-hidden {
     display:none;
 }
+.visually-hidden {
+    display:none;
+}
 
 .navigation-main,
 .site-navigation,
