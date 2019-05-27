@@ -30,6 +30,7 @@ a {
     background-position: top center;
 }
 
+
 .search-main {
     font-family:"OpenSans", Arial , sans-serif;
     font-size:15px;
@@ -325,4 +326,112 @@ legend {
     letter-spacing: 0.2px;
     text-align: left;
     color:rgba(255, 255, 255, 0.3);
+}
+
+/* Временно для сетк */
+
+html,body {
+    min-height:2795px;
+    min-width:1440px;
+}
+
+.body {
+    display:flex;
+    flex-direction:column;
+    min-width:1440px;
+    min-height:2795px;
+}
+.header {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.header-navigation {
+    min-width:1160px;
+    max-height:360px;
+    margin-top:40px;
+}
+
+.navigation-main {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction:row;
+    margin-right:61px;
+}
+
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction:row;
+    margin-left:60px;
+    margin-right:61px;
+}
+.item-catalog-class{
+    margin:0;
+    padding:0;
+}
+
+.for-flex {
+    display:flex;
+    flex-direction:row;
+    margin-left:63px;
+    margin-bottom:51px;
+    width:962px;
+}
+
+.main-header-logo {
+    margin-top:-20px;
+    margin-left:59px;
+    margin-bottom:35px;
+}
+
+/* -------------------- */
+
+.main-footer {
+    width:0 auto;;
+    min-height:323px;
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-navigation {
+    display:flex;
+    flex-direction:column;
+}
+.footer-flex {
+    margin-top:65px;
+    margin-left:139px;
+    margin-right:140px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+.footer-first {
+    display:flex;
+    flex-direction:row;
+}
+
+.footer-flex-second {
+    display:flex;
+    flex-direction:row;
+}
+
+.footer-second {
+    order:2;
+    display:flex;
+    flex-direction:row;
+}
+.footer-social-buttons {
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    justify-content:space-between;
+    width:423px;
+    margin:0 auto;
 }
