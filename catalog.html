@@ -8,12 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="second-body">
-        <header class="header">
+            <header class="header">
+            <div class="container-center">
                 <nav class="header-navigation">
                     <a href="index.html">
                         <img class="main-header-logo" src="img/logo-device.svg" width="163" height="35" alt="logo device">
                     </a>
-                    <div class="for-flex">
+                    <div class="header-wrapper">
                     <form class="search" action="https://echo.htmlacademy.ru" method="post">
                         <input class="search-main" type="search" id="search-text" placeholder="Поиск по сайту">
                         <button class="search-button" type="submit">Найти</button>
@@ -23,7 +24,7 @@
                           <a href="user.html">Валентин Петухов</a>
                         </li>
                       <li class="login-entered">
-                          <a href="login-enter.html">Войти</a>
+                          <a href="login-enter.html">Выйти</a>
                         </li>
                       <li class="compare">
                           <a href="compare.html">Сравнить</a>
@@ -37,22 +38,16 @@
                     <li class="site-navigation-current">
                         <a href="catalog.html">Каталог товаров</a>
                         <ul class="item-catalog-class">
-                            <li>
+                            <li class="item-catalog-first">
                                 <a href="#">Виртуальная реальность</a>
-                            </li>
-                            <li>
                                 <a href="catalog.html">Моноподы для селфи</a>
-                            </li>
-                            <li>
                                 <a href="#">Экшн-камеры</a>
                             </li>
-                            <li>
+                            <li class="item-catalog-second">
                                 <a href="#">Фитнес-браслеты</a>
-                            </li>
-                            <li>
                                 <a href="#">Умные часы</a>
                             </li>
-                            <li>
+                            <li class="item-catalog-third">
                                 <a href="#">Квадрокоптеры</a>
                             </li>
                         </ul>
@@ -68,10 +63,11 @@
                     </li>
                   </ul>
                 </nav>
-              </header>
-        <main class="catalog-container">
+            </div>
+            </header>
+            <main class="catalog-container">
+                <div class="container-center">
                 <h1 class="page-title">Моноподы для селфи</h1>
-
                 <ul class="pagetree">
                     <li>
                         <a href="index.html">Главная</a>
@@ -186,7 +182,8 @@
                         </li>
                     </ul>
                 </section>
-        </main>
+            </div>
+            </main>
 
         <footer class="main-footer">
                 <div class="footer-navigation">
