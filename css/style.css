@@ -480,19 +480,23 @@ ul .specs {
     margin-left:auto;
 }
 
-.contacts-main {
+.contacts-main,
+.about-contacts {
     margin-left:114px;
 }
 
-.warranty-main {
+.warranty-main,
+.about-warranty {
     margin-left:auto;
 }
 
-.delivery-main {
+.delivery-main,
+.about-delivery {
     margin-left:-38px;
 }
 
-.catalog-main {
+.catalog-main,
+.site-navigation-current {
     margin-top:54px;
     display:block;
     margin:0;
@@ -833,4 +837,9 @@ ul .specs {
 }
 .footer-social-buttons {
     display:flex;
+}
+
+/* catalog*/
+.login-entered {
+    margin-left:20px;
 }
