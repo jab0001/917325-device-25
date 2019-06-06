@@ -280,10 +280,6 @@ legend {
     text-align: left;
 }
 
-.filter {
-    background-color :#ebebeb;
-}
-
 .filter-option {
     font-family: "OpenSans", Arial , sans-serif;
     font-size: 14px;
@@ -876,7 +872,7 @@ ul .specs {
 }
 
 .catalog-container {
-    width:1160px;
+    width:1440px;
     margin:0 auto;
 }
 
@@ -886,14 +882,43 @@ ul .specs {
     margin-left:61px;
 }
 
+.pagetree li {
+    position: relative;
+    margin-right: 39px;
+}
+
+.pagetree li:last-child {
+    margin-right: 0;
+}
+
+.pagetree-current::after {
+    display:none;
+}
+
+.pagetree li::after {
+    content: "\203A";
+    color:#000000;
+    position: absolute;
+    top: 0px;
+    right: -25px;
+
+    width: 4px; 
+    height: 7px; 
+}
+
 .pagetree {
     margin:0;
     padding:0;
     display:flex;
-    margin-left:61px;
-    width:381px;
-    justify-content:space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom:49px;
+    margin-left:61px;
+}
+
+.pagetree-container {
+    width:1160px;
+    margin:0 auto;
 }
 
 .filters-catalog {
@@ -902,8 +927,81 @@ ul .specs {
 
 .catalog-list {
     display:flex;
+    padding:0;
+    margin:0;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: flex-end;
+
 }
 
 .catalog-item {
+    margin-left:40px;
+}
 
+.catalog {
+    width:972px;
+}
+.pagetree a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filters-catalog {
+    width:1440px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.filters-container {
+    width:1160px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+}
+
+.filter-background-container {
+    width:1440px;
+    background:linear-gradient(to right, #ebebeb 0px,#ebebeb 468px, white 468px,white 972px);
+}
+
+.filters-name {
+    display:flex;
+    width:1160px;
+    margin:0 auto;
+    height:72px;
+}
+.filter-sorting-center {
+    width:1440px;
+    background:linear-gradient(to right, #d9d9d9 0px,#d9d9d9 468px, #ebebeb 468px,#ebebeb 972px);
+}
+
+.filters-name b {
+    flex-shrink:0;
+    width:328px;
+}
+
+.sorting {
+    list-style:none;
+    width:832px;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content:space-between;
+    margin-right:368px;
+    flex-shrink:1;
+    margin-left:73px;
+}
+
+.sorting-name {
+    margin-right:56px;
+}
+
+.sorting a {
+    display:block;
+    margin-top:31px;
+}
+.filter-center-container {
+    width:1160px;
+    margin:0 auto;
 }
