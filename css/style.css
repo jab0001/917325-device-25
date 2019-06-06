@@ -651,7 +651,7 @@ ul .specs {
     display:flex;
  }
  
- .specification {
+.specification {
     margin:0;
     padding:0;
     width:425px;
@@ -704,7 +704,14 @@ ul .specs {
 }
 .services-info {
     display:flex;
+}
 
+.services-info-img {
+    position: relative;
+    left: 425px;
+    bottom:192px;
+    width: 136px;
+    height: 164px;
 }
 
 .services-buttons ul,
@@ -877,7 +884,7 @@ ul .specs {
 
 /* catalog*/
 .login-entered,
-.login-entered-footer                   ------------------------!
+.login-entered-footer                   /*------------------------!*/
 {
     margin-left:20px;
 }
