@@ -1032,3 +1032,30 @@ ul .specs {
     width:1160px;
     margin:0 auto;
 }
+.page-number-buttons {
+    list-style:none;
+    display:flex;
+    margin:0;
+    padding:0;
+    justify-content:space-between;
+    padding-right:30px;
+    padding-left:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.page-number {
+    list-style:none;
+    display:flex;
+    margin:0;
+    padding:0;
+    width:86px;
+    justify-content:space-between;
+}
+.page-number-container {
+    width:759px;
+    height:70px;
+    margin-left:auto;
+    background-color: #ebebeb;
+    margin-bottom:77px;
+}
+
