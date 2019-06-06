@@ -106,6 +106,7 @@ a {
 .site-navigation,
 .item-catalog-class,
 .footer-first,
+.footer-first-catalog,
 .footer-second,
 .footer-social-buttons {
     list-style:none;
@@ -115,6 +116,7 @@ a {
 .site-navigation a,
 .item-catalog-class a,
 .footer-first a,
+.footer-first-catalog a,
 .footer-second a,
 .footer-social-buttons a,
 .button-contact-us,
@@ -178,7 +180,8 @@ a {
 
 }
 
-.footer-first a {
+.footer-first a,
+.footer-first-catalog a {
     font-family: "OpenSans", Arial , sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -187,10 +190,12 @@ a {
     text-align: left;
     color: rgba(255, 255, 255, 0.7);
 }
-.footer-first a:hover {
+.footer-first a:hover,
+.footer-first-catalog a:hover {
     color:#ffffff;
 }
-.footer-first a:focus {
+.footer-first a:focus,
+.footer-first-catalog a:focus {
     color:rgba(255, 255, 255, 0.3);
 }
 
@@ -236,6 +241,10 @@ a {
 
 .login-entered a {
     color:rgba(0, 0, 0, 0.3);
+}
+
+.login-entered-footer a {
+    color:rgba(255, 255, 255, 0.7);
 }
 
 .page-title {
@@ -828,7 +837,7 @@ ul .specs {
 }
 
 .footer-first {
-    width:298px;
+    min-width:298px;
     margin:0;
     padding:0;
     display:flex;
@@ -867,8 +876,19 @@ ul .specs {
 }
 
 /* catalog*/
-.login-entered {
+.login-entered,
+.login-entered-footer                   ------------------------!
+{
     margin-left:20px;
+}
+
+.footer-first-catalog {
+    min-width:451px;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:space-between;
+
 }
 
 .catalog-container {
