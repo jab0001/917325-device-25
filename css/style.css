@@ -968,6 +968,7 @@ ul .specs {
 
 .catalog {
     width:972px;
+    margin-top:70px;
 }
 .pagetree a {
     color: rgba(0, 0, 0, 0.3);
@@ -1059,3 +1060,12 @@ ul .specs {
     margin-bottom:77px;
 }
 
+.catalog-item-image{
+    margin:0;
+    padding:0;
+    display:block;
+}
+
+.item-catalog-class {
+    display:none;
+}
