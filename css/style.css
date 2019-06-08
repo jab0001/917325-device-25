@@ -543,6 +543,7 @@ ul .specs {
 .first-slide {
     display:flex;
     flex-direction:row;
+    display:none;
 }
 
 .shop-slides-number {
@@ -684,7 +685,7 @@ ul .specs {
 }
 
 .services {
-    width:1440;
+    width:100%;
     margin-top:84px;
     height:388px;
     background: linear-gradient(to bottom, white 100px,#e5e5e5 100px,#e5e5e5 288px);
@@ -1061,4 +1062,37 @@ ul .specs {
 
 .item-catalog-class {
     display:none;
+}
+
+ .slider-controls label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+  
+    vertical-align: top;
+  
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 147px;
+    left: 999px;
+    z-index: 20;
+    
+    font-size: 0;
+}
+
+.shop-sells {
+    position:relative;
+}
+
+#product-1:checked ~  .shop-slides #slide1,
+#product-2:checked ~  .shop-slides #slide2,
+#product-3:checked ~  .shop-slides #slide3 {
+  display:flex;
 }
