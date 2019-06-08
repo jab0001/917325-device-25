@@ -26,9 +26,7 @@ a {
 }
 
 .header-navigation {
-    /*background-color:#f0c52e;*/
     background: linear-gradient(to bottom, white 40px,#f0c52e 40px,#f0c52e 60px);
-    background-position: top center;
 }
 
 
@@ -426,20 +424,19 @@ ul .specs {
 .body {
     width:1440px;
 }
-
 .container-center {
     width:1160px;
     margin:0 auto;
 }
-
-
-
+.shop-slides {
+    background: linear-gradient(to bottom, #f0c52e 0px,#f0c52e 129px,white 129px,white 100%);
+}
 /* сетка header*/
 
 .header-navigation {
     padding-left:60px;
     padding-right:60px;
-    min-height:340px;
+    min-height:210px;
     display:flex;
     flex-direction:column;
 }
@@ -496,12 +493,12 @@ ul .specs {
 
 .warranty-main,
 .about-warranty {
-    margin-left:auto;
+    margin-left:38px;
 }
 
 .delivery-main,
 .about-delivery {
-    margin-left:-38px;
+    margin-left:auto;
 }
 
 .catalog-main,
@@ -544,7 +541,6 @@ ul .specs {
 /*сетка main*/
 
 .first-slide {
-    margin-top:-112px;
     display:flex;
     flex-direction:row;
 }
@@ -554,14 +550,12 @@ ul .specs {
 }
 
 .second-slide {
-    margin-top:-112px;
     display:flex;
     flex-direction:row;
     display:none;
 }
 
 .third-slide {
-    margin-top:-112px;
     display:flex;
     flex-direction:row;
     display:none;
@@ -572,6 +566,7 @@ ul .specs {
     padding:0;
     display:block;
     margin-left:90px;
+    margin-top:18px;
 }
 
 .slider-2 {
@@ -579,6 +574,7 @@ ul .specs {
     padding:0;
     display:block;
     margin-left:103px;
+    margin-top:18px;
 }
 
 .slider-3 {
@@ -586,13 +582,15 @@ ul .specs {
     padding:0;
     display:block;
     margin-left:60px;
+    margin-top:18px;
 }
 
 .slide-wrapper1 {
-    margin-left:126px;
+    margin-left:125px;
     margin-right:60px;
     display:flex;
     flex-direction:column;
+    margin-top:90px;
 }
 
 .slide-wrapper2 {
@@ -600,12 +598,14 @@ ul .specs {
     margin-right:67px;
     display:flex;
     flex-direction:column;
+    margin-top:90px;
 }
 .slide-wrapper3 {
     margin-left:42px;
     margin-right:24px;
     display:flex;
     flex-direction:column;
+    margin-top:90px;
 }
 
 
@@ -631,13 +631,7 @@ ul .specs {
     margin:0;
     padding:0;
 }
-.slide-wrapper1-1,
-.slide-wrapper1-2,
-.slide-wrapper1-3 {
-    display:flex;
-    justify-content:space-between;
-    margin-top:62px;
-}
+
 
 .more-info {
     display:block;
@@ -905,7 +899,6 @@ ul .specs {
 
 .page-title {
     display:block;
-    margin-top:-70px;
     margin-left:61px;
 }
 
