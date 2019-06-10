@@ -214,6 +214,10 @@ a {
     color:#ffffff;
 }
 
+.footer-social {
+    margin-left:auto;
+}
+
 .phone {
     font-family: "OpenSans", Arial , sans-serif;
     font-size: 15px;
@@ -321,7 +325,7 @@ legend {
 .login-footer a {
     font-size: 15px;
     font-weight: 300;
-    line-height: 2;
+    line-height: 2.4;
     letter-spacing: 0.2px;
     text-align: left;
     color:rgba(255, 255, 255, 0.3);
@@ -370,14 +374,6 @@ ul .specs {
 }
 
 .more-info {
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 3.6px;
-    text-align: center;
-    text-transform:uppercase;
-}
-
-.more-info {
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -385,6 +381,7 @@ ul .specs {
     letter-spacing: 3.6px;
     text-align: center;
     color: #000000;
+    text-transform:uppercase;
 }
 .more-info:hover {
     background-color:#f0c52e;
@@ -665,6 +662,7 @@ ul .specs {
     margin-top:106px;
 }
 .navigation-bar-img {
+    position:relative;
     display:block;
     width:160px;
     height:238px;
@@ -687,9 +685,9 @@ ul .specs {
 
 .services {
     width:100%;
-    margin-top:84px;
-    height:388px;
-    background: linear-gradient(to bottom, white 100px,#e5e5e5 100px,#e5e5e5 288px);
+    margin-top:79px;
+    height:393px;
+    background: linear-gradient(to bottom, white 105px,#e5e5e5 105px,#e5e5e5 293px);
 }
 
 .services-wrapper {
@@ -700,14 +698,7 @@ ul .specs {
 }
 .services-info {
     display:flex;
-}
-
-.services-info-img {
-    position: relative;
-    left: 425px;
-    bottom:192px;
-    width: 136px;
-    height: 164px;
+    width:876px;
 }
 
 .services-buttons ul,
@@ -726,7 +717,8 @@ ul .specs {
     letter-spacing: 3.6px;
     text-align: left;
     color: #000000;
-    margin-bottom:30px;
+    margin-bottom:21px;
+    margin-top:5px;
     box-sizing:border-box;
 }
 
@@ -737,14 +729,33 @@ ul .specs {
 .delivery-info {
     margin:0px;
     padding:0;
-    margin-top:-50px;
     margin-left:124px;
-    width:426px;
+    padding-right:324px;
+    background:url("../img/delivery.svg") no-repeat;
+    background-position-x: 556px;
+    background-position-y: 10px;
 }
 
-.services-info-img {
-    display:block;
-    margin-left:132px;;
+.warranty-info {
+    margin:0px;
+    padding:0;
+    margin-left:124px;
+    padding-right:324px;
+    background:url("../img/warranty.svg") no-repeat;
+    background-position-x: 556px;
+    background-position-y: 10px;
+    display:none;
+}
+
+.credit-info {
+    margin:0px;
+    padding:0;
+    margin-left:124px;
+    padding-right:324px;
+    background:url("../img/credit.svg") no-repeat;
+    background-position-x: 556px;
+    background-position-y: 10px;
+    display:none;
 }
 
 .delivery-info h3,
@@ -756,6 +767,8 @@ ul .specs {
     letter-spacing: 0.5px;
     text-align: left;
     color: #000000;
+    margin:0;
+    padding:0;
 }
 
 .delivery-info p,
@@ -768,6 +781,7 @@ ul .specs {
     letter-spacing: 0.2px;
     text-align: left;
     color: #464646;
+    margin-top:32px;
 }
 .partners {
     width:1160px;
@@ -782,10 +796,10 @@ ul .specs {
     justify-content:space-between;
 }
 .contact-information {
-    margin-top:93px;
+    margin-top:143px;
     display:flex;
     justify-content:space-between;
-    height:655px;
+    height:601px;
 }
 
 .about-us {
@@ -895,7 +909,7 @@ ul .specs {
 }
 
 .catalog-container {
-    width:1440px;
+    width:100%;
     margin:0 auto;
 }
 
@@ -959,16 +973,18 @@ ul .specs {
     flex-wrap:wrap;
     flex-direction:row;
     justify-content: flex-end;
+    height:960px;
 
 }
 
 .catalog-item {
     margin-left:40px;
+    margin-bottom:22px;
 }
 
 .catalog {
     width:972px;
-    margin-top:70px;
+    margin-top:68px;
 }
 .pagetree a {
     color: rgba(0, 0, 0, 0.3);
@@ -989,16 +1005,57 @@ ul .specs {
 }
 
 .filter-background-container {
+    position:relative;
     width:1440px;
+    height:1217px;
     background:linear-gradient(to right, #ebebeb 0px,#ebebeb 468px, white 468px,white 972px);
 }
+
+.filters-container::after {
+    content: "";                          
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: calc(50% - 50vw);
+    background-color: #ebebeb;
+}
+
 
 .filters-name {
     display:flex;
     width:1160px;
     margin:0 auto;
     height:72px;
+    position:relative;
 }
+
+.filters-name b::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: calc(50% - 50vw);
+    background-color: #d9d9d9;
+}
+
+.filters-name b::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-right: calc(50% - 50vw);
+    background-color: #ebebeb;
+}
+
 .filter-sorting-center {
     width:1440px;
     background:linear-gradient(to right, #d9d9d9 0px,#d9d9d9 468px, #ebebeb 468px,#ebebeb 972px);
@@ -1057,7 +1114,7 @@ ul .specs {
     height:70px;
     margin-left:auto;
     background-color: #ebebeb;
-    margin-bottom:77px;
+    margin-top:41px;
 }
 
 .catalog-item-image{
@@ -1088,7 +1145,7 @@ ul .specs {
     flex-direction:row;
     position:relative;
     width:110px;
-    top: 345px;
+    top: 344px;
     left:998.5px;
     z-index: 20;
     
@@ -1100,4 +1157,76 @@ ul .specs {
 #product-2:checked ~  .shop-slides #slide2,
 #product-3:checked ~  .shop-slides #slide3 {
   display:flex;
+}
+
+.img-vr::before {
+    content: "";
+    background:url("../img/popular-1.svg");
+    position: absolute;
+    top: 52px;
+    right: 32px;
+
+    width: 97px; 
+    height: 55px;   
+}
+
+.img-selfie::before {
+    content: "";
+    background:url("../img/popular-2.svg");
+    position: absolute;
+    top: 41px;
+    right: 36px;
+
+    width: 86px; 
+    height: 117px;  
+}
+
+.img-action::before {
+    content: "";
+    background:url("../img/popular-3.svg");;
+    position: absolute;
+    top: 38px;
+    right: 40px;
+
+    width: 71px; 
+    height: 87px;  
+}
+
+.img-fitnes::before {
+    content: "";
+    background:url("../img/popular-4.svg");;
+    position: absolute;
+    top: 50px;
+    right: 25px;
+
+    width: 107px; 
+    height: 65px;  
+}
+
+.img-smart::before {
+    content: "";
+    background:url("../img/popular-5.svg");;
+    position: absolute;
+    top: 32px;
+    right: 49px;
+
+    width: 56px; 
+    height: 98px;   
+}
+
+.img-quadro::before {
+    content: "";
+    background:url("../img/popular-6.svg");;
+    position: absolute;
+    top:49px;
+    right:15px;
+
+    width: 132px; 
+    height: 69px;   
+}
+
+.footer-logo {
+    width:163px;
+    height:35px;
+    fill:#ffc600;
 }
