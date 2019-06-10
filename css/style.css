@@ -995,21 +995,26 @@ ul .specs {
 
 
 
-.filters-container {
+.filters-container {         
     width:1160px;
     margin:0 auto;
     display:flex;
     flex-direction:row;
+    height:1217px;
 }
+
+.filters {
+
+    position:relative; 
+}
+
 
 .filter-background-container {
-    position:relative;
     width:100%;
     height:1217px;
-    background:linear-gradient(to right, #ebebeb 0px,#ebebeb 468px, white 468px,white 972px);
 }
 
-.filters-container::after {
+.filters::after {          
     content: "";                          
     position: absolute;
     top: 0;
@@ -1018,6 +1023,18 @@ ul .specs {
     left: 0;
     z-index: -1;
     margin-left: calc(50% - 50vw);
+    background-color: #ebebeb;
+}
+
+.filters::before {          
+    content: "";                          
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;;
+    width:328px;
     background-color: #ebebeb;
 }
 
@@ -1050,7 +1067,7 @@ ul .specs {
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin-right: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw + 10px);
     background-color: #ebebeb;
 }
 
