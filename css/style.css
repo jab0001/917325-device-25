@@ -25,11 +25,6 @@ a {
     text-decoration: none;
 }
 
-.header-navigation {
-    background: linear-gradient(to bottom, white 40px,#f0c52e 40px,#f0c52e 60px);
-}
-
-
 .search-main {
     font-family:"OpenSans", Arial , sans-serif;
     font-size:15px;
@@ -423,22 +418,24 @@ ul .specs {
 
 .body {
     width:100%;
+    margin:0 auto;
 }
 .container-center {
     width:1160px;
     margin:0 auto;
 }
 .shop-slides {
-    background: linear-gradient(to bottom, #f0c52e 0px,#f0c52e 113px,white 113px,white 100%);
+    background: linear-gradient(to bottom, #f7e296 0px,#f7e296 129px,white 129px,white 100%);
 }
 /* сетка header*/
 
 .header-navigation {
     padding-left:60px;
     padding-right:60px;
-    min-height:226px;
+    min-height:210px;
     display:flex;
     flex-direction:column;
+    background: linear-gradient(to bottom, white 40px,#f7e296 40px,#f7e296 60px);
 }
 
 .main-header-logo {
@@ -486,6 +483,9 @@ ul .specs {
     margin-left:auto;
 }
 
+.login-enter {
+    margin-left:20px;
+}
 .contacts-main,
 .about-contacts {
     margin-left:114px;
@@ -667,21 +667,22 @@ ul .specs {
 .navigation-bar-img {
     display:block;
     width:160px;
-    height:160px;
-    background-color:#f0c52e;
-}
-.navigation-bar-img img {
-    display:block;
-    margin: 0 auto;
-    padding-top:25%
+    height:238px;
+    background: linear-gradient(to bottom, #f7e296 0px,#f7e296 160px,white 160px,white 238px);
 }
 
 .navigation-bar-name {
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    text-align: left;
+    color: #000000;
     margin:0;
     padding:0;
     width:160px;
     display:block;
-    margin-top:39px;
+    padding-top:194px;
 }
 
 .services {
@@ -899,8 +900,11 @@ ul .specs {
 }
 
 .page-title {
+    margin:0;
+    padding:0;
     display:block;
     margin-left:61px;
+    padding-top:55px;
 }
 
 .pagetree li {
@@ -933,6 +937,7 @@ ul .specs {
     display:flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top:20px;
     margin-bottom:49px;
     margin-left:61px;
 }
@@ -940,6 +945,7 @@ ul .specs {
 .pagetree-container {
     width:1160px;
     margin:0 auto;
+    background:linear-gradient(to bottom, #f7e296 0px,#f7e296 16px, white 16px,white 100%);
 }
 
 .filters-catalog {
@@ -1065,26 +1071,29 @@ ul .specs {
 }
 
  .slider-controls label {
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    margin-right: 8px;
+    width: 10px;
+    height: 10px;
+    margin-right: 21px;
   
     vertical-align: top;
   
     background-color: transparent;
-    border: 2px solid #000000;
+    border: 1.5px solid #000000;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .slider-controls {
-    position: relative;
-    top: 325px;
-    left: 999px;
+    display: flex;
+    flex-direction:row;
+    position:relative;
+    width:110px;
+    top: 345px;
+    left:998.5px;
     z-index: 20;
     
     font-size: 0;
+
 }
 
 #product-1:checked ~  .shop-slides #slide1,
