@@ -1667,3 +1667,36 @@ ul .specs {
     width: 13px; 
     height: 12px;   
 }
+
+.new {
+    position:relative;
+}
+
+.new::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 27px;
+
+    width: 56px;
+    height: 56px;
+    opacity: 0.1;
+    border: solid 2px #000000;
+    border-radius:50%;
+}
+
+.new::before {
+    content: "NEW";
+    position: absolute;
+    top: 46px;
+    right: 39px;
+
+
+    opacity: 0.2;
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size:14px;
+    font-weight: 800;
+    line-height: 1.71;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
