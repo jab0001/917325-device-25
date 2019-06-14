@@ -11,6 +11,20 @@ font-family: "GilroyLight";
     font-weight: normal; 
 }
 
+@font-face {
+font-family: "OpenSans";
+    src: url("../fonts/web/opensans.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+font-family: "OpenSans";
+    src: url("../fonts/web/opensanslight.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
 body {
     padding:0;
     margin:0;
@@ -438,8 +452,8 @@ ul .specs {
 }
 
 .main-header-logo {
-    margin-bottom:35px;
-    margin-top:25px;
+    margin-bottom:30px;
+    margin-top:20px;
     display:block;
 }
 
@@ -453,7 +467,7 @@ ul .specs {
     margin:0;
     padding:0;
     width:1040px;
-    margin-top:48px;
+    margin-top:33px;
     margin-right:auto;
     display:flex;
     flex-direction:row;
@@ -483,16 +497,16 @@ ul .specs {
 }
 
 .login-enter {
-    margin-left:20px;
+    margin-left:18px;
 }
 .contacts-main,
 .about-contacts {
-    margin-left:114px;
+    margin-left:100px;
 }
 
 .warranty-main,
 .about-warranty {
-    margin-left:38px;
+    margin-left:34px;
 }
 
 .delivery-main,
