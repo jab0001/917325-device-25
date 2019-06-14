@@ -326,6 +326,11 @@ legend {
     line-height: 1.33;
     letter-spacing: 0.2px;
     text-align: left;
+    float:left;
+    
+    margin:0;
+    padding:0;
+    margin-top:27px;
 }
 
 .catalog-item-price {
@@ -336,6 +341,10 @@ legend {
     letter-spacing: 0.2px;
     text-align: right;
     color:#464646;
+
+    margin:0;
+    padding:0;
+    margin-top:27px;
 }
 
 .login-footer a {
@@ -372,16 +381,6 @@ legend {
     color: #464646;
 }
 
-.shop-slides-number {
-    font-family: "Gilroy", Arial , sans-serif;
-    font-size: 179px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 1.8px;
-    text-align: right;
-    color: white;
-}
-
 .slide-navigation ul {
     list-style:none;
 }
@@ -398,7 +397,10 @@ ul .specs {
     text-align: center;
     color: #000000;
     text-transform:uppercase;
+    width:220px;
 }
+
+
 .more-info:hover {
     background-color:#f0c52e;
 }
@@ -439,7 +441,20 @@ ul .specs {
 }
 .shop-slides {
     background: linear-gradient(to bottom, #f7e296 0px,#f7e296 129px,white 129px,white 100%);
+    position:relative;
 }
+
+.shop-slides:after  {
+    content: "";
+    background:#ffffff;
+    position: absolute;
+    top: 55px;
+    right: 460px;
+    
+    width: 100px; 
+    height: 7px;   
+}
+
 /* сетка header*/
 
 .header-navigation {
@@ -452,7 +467,7 @@ ul .specs {
 }
 
 .main-header-logo {
-    margin-bottom:30px;
+    margin-bottom:28px;
     margin-top:20px;
     display:block;
 }
@@ -467,7 +482,7 @@ ul .specs {
     margin:0;
     padding:0;
     width:1040px;
-    margin-top:33px;
+    margin-top:35px;
     margin-right:auto;
     display:flex;
     flex-direction:row;
@@ -489,16 +504,57 @@ ul .specs {
 }
 
 .myitems {
+    position:relative;
     margin-left:65px;
 }
 
+.myitems a:before {
+    content: "";
+    background:url("../img/cart.svg");
+    position: absolute;
+    top: 8px;
+    right: 70px;
+
+    width: 12px; 
+    height: 12px;   
+}
+
 .compare {
+    position:relative;
     margin-left:auto;
 }
 
+.compare a:before {
+    content: "";
+    background:url("../img/compare.svg");
+    position: absolute;
+    top: 9px;
+    right: 77px;
+    
+    width: 10px; 
+    height: 10px;   
+}
+
 .login-enter {
+    position:relative;
     margin-left:18px;
 }
+
+.logged a {
+    position:relative;
+}
+
+.login-enter a:before {
+    content: "";
+    background:url("../img/user.svg");
+    position: absolute;
+    top: 8px;
+    right: 58px;
+
+    width: 13px; 
+    height: 12px;   
+}
+
 .contacts-main,
 .about-contacts {
     margin-left:100px;
@@ -557,22 +613,63 @@ ul .specs {
     display:flex;
     flex-direction:row;
     display:none;
+    position:relative;
 }
 
-.shop-slides-number {
-    display:none;
+.first-slide:before {
+    content: "01";
+    position: absolute;
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 179px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 1.8px;
+    text-align: right;
+    color: white;
+    top: -5px;
+    right: 42px;
 }
 
 .second-slide {
     display:flex;
     flex-direction:row;
     display:none;
+    position:relative;
+}
+
+.second-slide:before {
+    content: "02";
+    position: absolute;
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 179px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 1.8px;
+    text-align: right;
+    color: white;
+    top: -5px;
+    right: 42px;
 }
 
 .third-slide {
     display:flex;
     flex-direction:row;
     display:none;
+    position:relative;
+}
+
+.third-slide:before {
+    content: "03";
+    position: absolute;
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 179px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 1.8px;
+    text-align: right;
+    color: white;
+    top: -5px;
+    right: 42px; 
 }
 
 .slider-1 {
@@ -604,7 +701,7 @@ ul .specs {
     margin-right:60px;
     display:flex;
     flex-direction:column;
-    margin-top:77px;
+    margin-top:85px;
 }
 
 .slide-wrapper2 {
@@ -612,14 +709,15 @@ ul .specs {
     margin-right:67px;
     display:flex;
     flex-direction:column;
-    margin-top:77px;
+    margin-top:85px;
 }
+
 .slide-wrapper3 {
     margin-left:42px;
     margin-right:24px;
     display:flex;
     flex-direction:column;
-    margin-top:77px;
+    margin-top:85px;
 }
 
 
@@ -637,15 +735,10 @@ ul .specs {
 .slide-wrapper1 p,
 .slide-wrapper2 p,
 .slide-wrapper3 p {
-    margin-top:31px;
+    margin-top:19px;
+    margin-right:2px;
+    margin-bottom:52px;
 }
-
-.shop-slides-number {
-    display:block;
-    margin:0;
-    padding:0;
-}
-
 
 .more-info {
     display:block;
@@ -665,7 +758,7 @@ ul .specs {
     width:425px;
     display:flex;
     justify-content:space-between;
-    margin-top:73px;
+    margin-top:57px;
 }
 
 .navigation-bar-icons {
@@ -675,7 +768,7 @@ ul .specs {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    margin-top:106px;
+    margin-top:50px;
 }
 .navigation-bar-img {
     position:relative;
@@ -711,7 +804,20 @@ ul .specs {
     width:1160px;
     margin:auto;
     display:flex;
+    position:relative;
 }
+
+.services-wrapper:before {
+    content: "";
+    background:#000000;
+    position: absolute;
+    top: 4px;
+    right: 876px;
+    
+    width: 7px; 
+    height: 319px;   
+}
+
 .services-info {
     display:flex;
     width:876px;
@@ -816,6 +922,29 @@ ul .specs {
     display:flex;
     justify-content:space-between;
     height:601px;
+    position:relative;
+}
+
+.contact-information:after {
+    content: "";
+    background:#000000;
+    position: absolute;
+    top: -54px;
+    right: 1080px;
+    
+    width: 80px; 
+    height: 7px;   
+}
+
+.contact-information:before {
+    content: "";
+    background:#000000;
+    position: absolute;
+    top: -54px;
+    right: 480px;
+    
+    width: 80px; 
+    height: 7px;   
 }
 
 .about-us {
@@ -856,8 +985,21 @@ ul .specs {
     margin:0 auto;
     display:flex;
     flex-direction:column;
-    padding-top:65px;
+    padding-top:60px;
+    position:relative;
 }
+
+.footer-container-center:after {
+    content: "";
+    background:#ffc600;
+    position: absolute;
+    top: 237px;
+    right: 1080px;
+    
+    width: 80px; 
+    height: 7px;   
+}
+
 .footer-wrapper {
     display:flex;
     justify-content:space-between;
@@ -872,7 +1014,7 @@ ul .specs {
 }
 
 .footer-wrapper-second {
-    margin-top:40px;
+    margin-top:30px;
     display:flex;
     justify-content:space-between;
 }
@@ -882,11 +1024,13 @@ ul .specs {
     padding:0;
     display:flex;
     justify-content:space-between;
+    margin-top:5px;
+    margin-right:40px;
 }
 .footer-wrapper-third {
     display:flex;
-    margin-top:70px;
-    justify-content:space-between;
+    margin-top:62px;
+
 }
 .adress,
 .phone {
@@ -899,12 +1043,30 @@ ul .specs {
     margin-left:483px;
 }
 .footer-social-buttons {
+    width:141px;
     display:flex;
+    margin:0;
+    padding:0;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.social-button:focus {
+  opacity:0.1;
+}
+
+.social-button:hover {
+    opacity:0.6;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    fill:rgba(255, 255, 255, 0.3);
 }
 
 /* catalog*/
 .login-entered,
-.login-entered-footer                   /*------------------------!*/
+.login-entered-footer                   
 {
     margin-left:20px;
 }
@@ -914,7 +1076,7 @@ ul .specs {
     margin:0;
     padding:0;
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-end;
 
 }
 
@@ -945,11 +1107,11 @@ ul .specs {
 }
 
 .pagetree li::after {
-    content: "\203A";
-    color:#000000;
+    content: "";
+    background: url("../img/nav-arrow.svg");
     position: absolute;
-    top: 0px;
-    right: -25px;
+    top: 10px;
+    right: -17px;
 
     width: 4px; 
     height: 7px; 
@@ -962,7 +1124,7 @@ ul .specs {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top:20px;
-    margin-bottom:49px;
+    margin-bottom:46px;
     margin-left:61px;
 }
 
@@ -989,7 +1151,7 @@ ul .specs {
 
 .catalog-item {
     margin-left:40px;
-    margin-bottom:22px;
+    margin-bottom:47px;
 }
 
 .catalog {
@@ -1091,30 +1253,66 @@ ul .specs {
 }
 
 .filters-name b {
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+    text-align: left;
+    color:#000000;
+
     flex-shrink:0;
-    width:328px;
+    width:268px;
     background-color: #d9d9d9;
+    padding-left:60px;
+    padding-top:20px;
 }
 
 .sorting {
     list-style:none;
-    width:832px;
     padding:0;
     margin:0;
     display:flex;
     justify-content:space-between;
-    margin-right:368px;
     flex-shrink:1;
     margin-left:73px;
+    align-items:center;
+}
+
+.sorting li {
+    align-items:center;
 }
 
 .sorting-name {
-    margin-right:56px;
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+    text-align: left;
+    color:#000000;
+    margin-right:50px;
+
+    
+}
+
+.sorting-buttons {
+    display:flex;
+    width:41px;
+    justify-content:space-between;
+    margin-left:auto;
+    align-items:center;
 }
 
 .sorting a {
+    font-family: "OpenSans", Arial , sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: left;
+    color:#000000;
+
     display:block;
-    margin-top:31px;
+    margin-right:30px;
 }
 .filter-center-container {
     width:1160px;
@@ -1128,9 +1326,19 @@ ul .specs {
     justify-content:space-between;
     padding-right:30px;
     padding-left:30px;
-    padding-top:30px;
+    padding-top:25px;
     padding-bottom:30px;
 }
+
+.page-number-buttons a {
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+    color: #000000;
+}
+
 .page-number {
     list-style:none;
     display:flex;
@@ -1256,6 +1464,7 @@ ul .specs {
 }
 
 .footer-logo {
+    margin-top:5px;
     width:163px;
     height:35px;
     fill:#ffc600;
@@ -1383,4 +1592,78 @@ ul .specs {
 .modal-map p {
     margin:0;
     padding:0;
+}
+
+.myitems-footer {
+    position:relative;
+}
+
+.myitems-footer a::before {
+    content: "";
+    background:url("../img/cart.svg");
+    position: absolute;
+    top: 11px;
+    right: 70px;
+
+    width: 12px; 
+    height: 12px;   
+}
+
+.compare-footer a {
+    position:relative;
+    margin-right:62px;
+}
+
+.compare-footer a::before {
+    content: "";
+    background:url("../img/compare.svg");
+    position: absolute;
+    top: 7px;
+    right: 79px;
+    
+    width: 10px; 
+    height: 10px;   
+}
+
+.login-footer a {
+    position:relative;
+    margin-right:64px;
+}
+
+.login-entered-footer {
+    position:relative;
+}
+
+.login-entered-footer a::before {
+    content: "";
+    background:url("../img/user.svg");
+    position: absolute;
+    top: 12px;
+    right: 165px;
+
+    width: 13px; 
+    height: 12px;   
+}
+
+.login-entered-footer a {
+    margin-right:20px;
+}
+
+.logged a {
+    margin-left:17px;
+}
+
+.logged {
+    position:relative;
+}
+
+.logged a::before {
+    content: "";
+    background:url("../img/user.svg");
+    position: absolute;
+    top: 3px;
+    right: 145px;
+
+    width: 13px; 
+    height: 12px;   
 }
