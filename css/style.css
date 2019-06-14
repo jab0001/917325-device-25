@@ -1,28 +1,24 @@
 @font-face {
 font-family: "Gilroy";
     src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-weight: 800; 
 }
 @font-face {
 font-family: "GilroyLight";
-    src: url("../fonts/web/gilroylight.woff2") format("woff2"); 
-    font-style: normal; 
-    font-weight: normal; 
+    src: url("../fonts/web/gilroylight.woff2") format("woff2");  
+    font-weight: 300; 
 }
 
 @font-face {
 font-family: "OpenSans";
     src: url("../fonts/web/opensans.woff2") format("woff2"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-weight: 400; 
 }
 
 @font-face {
 font-family: "OpenSans";
     src: url("../fonts/web/opensanslight.woff2") format("woff2"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-weight: 300; 
 }
 
 body {
@@ -1628,6 +1624,17 @@ ul .specs {
 .login-footer a {
     position:relative;
     margin-right:64px;
+}
+
+.login-footer a::before {
+    content: "";
+    background:url("../img/user.svg");
+    position: absolute;
+    top: 4px;
+    right: 56px;
+
+    width: 13px; 
+    height: 12px;   
 }
 
 .login-entered-footer {
