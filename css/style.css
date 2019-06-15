@@ -22,6 +22,7 @@ font-family: "OpenSans";
 }
 
 body {
+    min-width:1440px;
     padding:0;
     margin:0;
     font-family:"Gilroy", Arial , sans-serif;
@@ -29,6 +30,10 @@ body {
     color:#000000;
 
     background-color:white;
+}
+
+.catalog-body {
+    background:linear-gradient(to bottom, white 0%,white 404px,#ebebeb 404px,#ebebeb 475px, white 475px,white 100%);
 }
 
 a {
@@ -1216,9 +1221,8 @@ ul .specs {
     width:1160px;
     margin:0 auto;
     height:72px;
-    position:relative;
+    /*position:relative;*/
 }
-
 .filters-name b::before {
     content: "";
     position: absolute;
@@ -1231,7 +1235,7 @@ ul .specs {
     background-color: #d9d9d9;
 }
 
-.filters-name b::after {
+/*.filters-name::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1241,11 +1245,10 @@ ul .specs {
     z-index: -1;
     margin-right: calc(50% - 50vw + 10px);
     background-color: #ebebeb;
-}
+}*/
 
 .filter-sorting-center {
     margin:0 auto;
-    width:100%;
 }
 
 .filters-name b {
@@ -1256,6 +1259,7 @@ ul .specs {
     letter-spacing: 3.2px;
     text-align: left;
     color:#000000;
+    position:relative;
 
     flex-shrink:0;
     width:268px;
@@ -1626,7 +1630,7 @@ ul .specs {
     margin-right:64px;
 }
 
-.login-footer a::before {
+.login-footer-main a::before {
     content: "";
     background:url("../img/user.svg");
     position: absolute;
