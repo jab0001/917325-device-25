@@ -22,7 +22,6 @@ font-family: "OpenSans";
 }
 
 body {
-    min-width:1440px;
     padding:0;
     margin:0;
     font-family:"Gilroy", Arial , sans-serif;
@@ -30,10 +29,6 @@ body {
     color:#000000;
 
     background-color:white;
-}
-
-.catalog-body {
-    background:linear-gradient(to bottom, white 0%,white 404px,#ebebeb 404px,#ebebeb 475px, white 475px,white 100%);
 }
 
 a {
@@ -794,7 +789,6 @@ ul .specs {
 }
 
 .services {
-    width:100%;
     margin-top:79px;
     height:393px;
     background: linear-gradient(to bottom, white 105px,#e5e5e5 105px,#e5e5e5 293px);
@@ -1221,7 +1215,7 @@ ul .specs {
     width:1160px;
     margin:0 auto;
     height:72px;
-    /*position:relative;*/
+    position:relative;
 }
 .filters-name b::before {
     content: "";
@@ -1235,7 +1229,7 @@ ul .specs {
     background-color: #d9d9d9;
 }
 
-/*.filters-name::after {
+.filters-name::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1245,7 +1239,7 @@ ul .specs {
     z-index: -1;
     margin-right: calc(50% - 50vw + 10px);
     background-color: #ebebeb;
-}*/
+}
 
 .filter-sorting-center {
     margin:0 auto;
