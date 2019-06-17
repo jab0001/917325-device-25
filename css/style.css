@@ -1229,6 +1229,8 @@ ul .specs {
     background-color: #d9d9d9;
 }
 
+/* Второй вариант полосы
+
 .filters-name::after {
     content: "";
     position: absolute;
@@ -1239,10 +1241,14 @@ ul .specs {
     z-index: -1;
     margin-right: calc(50% - 50vw + 10px);
     background-color: #ebebeb;
-}
+}*/
 
 .filter-sorting-center {
     margin:0 auto;
+    background-color: #ebebeb;
+    width:100%;
+    height:70px;
+    z-index:-2;
 }
 
 .filters-name b {
