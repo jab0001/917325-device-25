@@ -141,7 +141,18 @@ a {
     text-align: left;
 }
 
-.about-us p,
+.about-us p {
+    font-family: "OpenSans", Arial , sans-serif;
+    font-size:15px;
+    line-height:2;
+    text-align:left;
+    font-weight:300;
+    color:#464646;
+
+    margin:0;
+    padding:0;
+    margin-top:31px;
+}
 .contacts-map p {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
@@ -380,7 +391,8 @@ legend {
 .slide-navigation ul {
     list-style:none;
 }
-ul .specs {
+
+.specification {
     list-style:none;
 }
 
@@ -393,6 +405,8 @@ ul .specs {
     text-align: center;
     color: #000000;
     text-transform:uppercase;
+
+    
     width:220px;
 }
 
@@ -406,7 +420,7 @@ ul .specs {
     background-color:#f0c52e;
 
 }
-.specs b {
+.specification b {
     font-family:"GilroyLight", Arial , sans-serif;
     font-size: 36px;
     font-weight: 300;
@@ -416,7 +430,7 @@ ul .specs {
     color: #000000;
 }
 
-.specs p {
+.specification p {
     font-family: "OpenSans", Arial , sans-serif;
     font-size: 13px;
     font-weight: 300;
@@ -425,6 +439,7 @@ ul .specs {
     text-align: left;
     color: #464646;
 }
+
 /*center*/
 
 .body {
@@ -731,9 +746,8 @@ ul .specs {
 .slide-wrapper1 p,
 .slide-wrapper2 p,
 .slide-wrapper3 p {
-    margin-top:19px;
-    margin-right:2px;
-    margin-bottom:52px;
+    margin-top:20px;
+    margin-bottom:50px;
 }
 
 .more-info {
@@ -751,10 +765,15 @@ ul .specs {
 .specification {
     margin:0;
     padding:0;
-    width:425px;
+    width:429px;
     display:flex;
     justify-content:space-between;
     margin-top:57px;
+}
+
+.specification p {
+    margin-top:8px;
+    margin-bottom:62px;
 }
 
 .navigation-bar-icons {
@@ -945,8 +964,7 @@ ul .specs {
 .about-us {
     display:flex;
     flex-direction:column;
-    width:462;
-    height:562px;
+    height:462px;
     justify-content:space-between;
 }
 
