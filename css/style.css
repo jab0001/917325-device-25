@@ -141,7 +141,7 @@ a {
     text-align: left;
 }
 
-.about-us p {
+.about-us-first {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
     line-height:2;
@@ -151,8 +151,25 @@ a {
 
     margin:0;
     padding:0;
-    margin-top:31px;
+    padding-top:43px;
+    width:462px;
 }
+
+.about-us-second {
+    font-family: "OpenSans", Arial , sans-serif;
+    font-size:15px;
+    line-height:2;
+    text-align:left;
+    font-weight:300;
+    color:#464646;
+
+    display:block;
+    width:472px;
+    margin:0;
+    padding:0;
+    padding-top:30px;
+}
+
 .contacts-map p {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
@@ -160,12 +177,23 @@ a {
     text-align:left;
     font-weight:300;
     color:#464646;
+
+    margin:0;
+    padding:0;
+    margin-top:4px;
 }
 
 .delivery-company {
+    font-family: "Gilroy", Arial , sans-serif;
     text-align:left;
     font-size:16px;
     line-height: 2.5;
+    list-style:none;
+
+    margin:0;
+    padding:0;
+    margin-top:65px;
+    padding-left:36px;
 }
 
 .button-contact-us,
@@ -223,6 +251,7 @@ a {
     letter-spacing: 3.6px;
     text-align: left;
     color:#ffffff;
+    text-transform:uppercase;
 }
 
 .footer-second a:hover {
@@ -248,6 +277,7 @@ a {
     line-height: 2;
     text-align: right;
     color:#ffffff;
+    letter-spacing: 0.4px;
 }
 
 .adress {
@@ -257,6 +287,7 @@ a {
     line-height: 2;
     text-align: left;
     color:#ffffff;
+    letter-spacing: 0.4px;
 }
 
 .login-entered a {
@@ -282,7 +313,18 @@ a {
     letter-spacing: 0.1px;
     text-align: left;
     color: rgba(0, 0, 0, 0.3);
+
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin:0;
+    padding:0;
+    margin-top:23px;
+    margin-bottom:46px;
+    margin-left:60px;
 }
+
 .pagetree a:hover {
     color:rgba(0, 0, 0, 0.6);
 }
@@ -309,15 +351,6 @@ legend {
     text-align: left;
 }
 
-.filter-option {
-    font-family: "OpenSans", Arial , sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 2.86;
-    letter-spacing: 0.1px;
-    text-align: left;
-}
-
 .filter-button {
     font:inherit;
     vertical-align: middle;
@@ -326,6 +359,11 @@ legend {
     font-size: 18px;
     letter-spacing: 3.6px;
     text-align: center;
+
+    margin:0;
+    padding:0;
+    margin-top:41px;
+    margin-left:100px;
 }
 
 .catalog-item h3 {
@@ -337,7 +375,7 @@ legend {
     
     margin:0;
     padding:0;
-    margin-top:27px;
+    margin-top:28px;
 }
 
 .catalog-item-price {
@@ -406,8 +444,11 @@ legend {
     color: #000000;
     text-transform:uppercase;
 
-    
+    display:block;
+    margin:0;
+    padding:0;
     width:220px;
+    padding-left:2px;
 }
 
 
@@ -451,7 +492,9 @@ legend {
     margin:0 auto;
 }
 .shop-slides {
-    background: linear-gradient(to bottom, #f7e296 0px,#f7e296 129px,white 129px,white 100%);
+    counter-reset: section;
+
+    background: linear-gradient(to bottom, #f7e296 0px,#f7e296 127px,white 127px,white 100%);
     position:relative;
 }
 
@@ -459,7 +502,7 @@ legend {
     content: "";
     background:#ffffff;
     position: absolute;
-    top: 55px;
+    top: 53px;
     right: 460px;
     
     width: 100px; 
@@ -469,18 +512,20 @@ legend {
 /* сетка header*/
 
 .header-navigation {
+    display:flex;
+    flex-direction:column;
+    background: linear-gradient(to bottom, white 38px,#f7e296 38px,#f7e296 60px);
+
     padding-left:60px;
     padding-right:60px;
     min-height:210px;
-    display:flex;
-    flex-direction:column;
-    background: linear-gradient(to bottom, white 40px,#f7e296 40px,#f7e296 60px);
 }
 
 .main-header-logo {
-    margin-bottom:28px;
-    margin-top:20px;
     display:block;
+
+    margin-bottom:27px;
+    margin-top:20px;
 }
 
 .header-wrapper {
@@ -490,33 +535,36 @@ legend {
 }
 
 .site-navigation {
-    margin:0;
-    padding:0;
-    width:1040px;
-    margin-top:35px;
-    margin-right:auto;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+
+    margin:0;
+    padding:0;
+    width:1044px;
+    margin-top:35px;
+    margin-right:auto;
 }
 .search {
     display:block;
+    
     margin:0;
     padding:0;
 }
 .navigation-main {
-    margin:0;
-    padding:0;
-    width:1040px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+
+    margin:0;
+    padding:0;
     width:491px;
 }
 
 .myitems {
     position:relative;
-    margin-left:65px;
+
+    margin-left:63px;
 }
 
 .myitems a:before {
@@ -532,6 +580,7 @@ legend {
 
 .compare {
     position:relative;
+
     margin-left:auto;
 }
 
@@ -540,7 +589,7 @@ legend {
     background:url("../img/compare.svg");
     position: absolute;
     top: 9px;
-    right: 77px;
+    right: 79px;
     
     width: 10px; 
     height: 10px;   
@@ -548,6 +597,7 @@ legend {
 
 .login-enter {
     position:relative;
+
     margin-left:18px;
 }
 
@@ -568,7 +618,7 @@ legend {
 
 .contacts-main,
 .about-contacts {
-    margin-left:100px;
+    margin-left:108px;
 }
 
 .warranty-main,
@@ -583,30 +633,33 @@ legend {
 
 .catalog-main,
 .site-navigation-current {
-    margin-top:54px;
     display:block;
+
     margin:0;
     padding:0;
 }
 
 .item-catalog-class {
     display:none;
+    display:flex;
+    justify-content:space-between;
+
     margin:0;
     padding:0;
     padding-top:38px;
     width:551px;
     padding-bottom:42px;
-    display:flex;
-    justify-content:space-between;
 }
 
 .item-catalog-first a {
     display:block;
+
     margin:0;
     padding:0;
 }
 .item-catalog-second a {
     display:block;
+
     margin:0;
     padding:0;
     margin-left:58px;
@@ -614,6 +667,7 @@ legend {
 
 .item-catalog-third a {
     display:block;
+
     margin:0;
     padding:0;
     margin-left:77px;
@@ -628,7 +682,7 @@ legend {
 }
 
 .first-slide:before {
-    content: "01";
+    content: counters(section,".") "1";
     position: absolute;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 179px;
@@ -637,8 +691,9 @@ legend {
     letter-spacing: 1.8px;
     text-align: right;
     color: white;
-    top: -5px;
-    right: 42px;
+
+    top: -9px;
+    right: 46px;
 }
 
 .second-slide {
@@ -649,7 +704,7 @@ legend {
 }
 
 .second-slide:before {
-    content: "02";
+    content: counters(section,".") "2";
     position: absolute;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 179px;
@@ -658,8 +713,9 @@ legend {
     letter-spacing: 1.8px;
     text-align: right;
     color: white;
-    top: -5px;
-    right: 42px;
+
+    top: -9px;
+    right: 46px;
 }
 
 .third-slide {
@@ -670,7 +726,7 @@ legend {
 }
 
 .third-slide:before {
-    content: "03";
+    content: counters(section,".") "3";
     position: absolute;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 179px;
@@ -679,58 +735,70 @@ legend {
     letter-spacing: 1.8px;
     text-align: right;
     color: white;
-    top: -5px;
-    right: 42px; 
+
+    top: -9px;
+    right: 46px; 
 }
 
 .slider-1 {
+    display:block;
+
     margin:0;
     padding:0;
-    display:block;
     margin-left:90px;
-    margin-top:5px;
+    margin-top:4px;
 }
 
 .slider-2 {
+    display:block;
+
     margin:0;
     padding:0;
-    display:block;
-    margin-left:103px;
-    margin-top:5px;
+    margin-left:115px;
+    margin-top:17px;
 }
 
 .slider-3 {
+    display:block;
+
     margin:0;
     padding:0;
-    display:block;
-    margin-left:60px;
-    margin-top:5px;
+    margin-left:30px;
+    margin-top:70px;
 }
 
 .slide-wrapper1 {
-    margin-left:125px;
-    margin-right:60px;
     display:flex;
     flex-direction:column;
-    margin-top:85px;
+
+    margin-left:125px;
+    margin-right:60px;
+    margin-top:83px;
 }
 
 .slide-wrapper2 {
-    margin-left:139px;
-    margin-right:67px;
     display:flex;
     flex-direction:column;
+
+    margin-left:139px;
+    margin-right:67px;
     margin-top:85px;
 }
 
 .slide-wrapper3 {
-    margin-left:42px;
-    margin-right:24px;
     display:flex;
     flex-direction:column;
+
+    z-index:1;
+
+    margin-left:43px;
+    margin-right:24px;
     margin-top:85px;
 }
 
+.specs-third-slider {
+    margin-right:154px;
+}
 
 .slide-wrapper1 b,
 .slide-wrapper1 p,
@@ -739,6 +807,7 @@ legend {
 .slide-wrapper3 b,
 .slide-wrapper3 p {
     display:block;
+
     margin:0;
     padding:0;
 }
@@ -750,24 +819,21 @@ legend {
     margin-bottom:50px;
 }
 
-.more-info {
-    display:block;
-    margin:0;
-    padding:0;
-}
 .slide-navigation ul {
+    display:flex;
+
     width:78px;
     margin:0;
     padding:0;
-    display:flex;
  }
  
 .specification {
+    display:flex;
+    justify-content:space-between;
+
     margin:0;
     padding:0;
     width:429px;
-    display:flex;
-    justify-content:space-between;
     margin-top:57px;
 }
 
@@ -778,19 +844,21 @@ legend {
 
 .navigation-bar-icons {
     list-style:none;
-    margin:0;
-    padding:0;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    margin-top:50px;
+
+    margin:0;
+    padding:0;
+    margin-top:51px;
 }
 .navigation-bar-img {
     position:relative;
     display:block;
+    background: linear-gradient(to bottom, #f7e296 0px,#f7e296 160px,white 160px,white 238px);
+
     width:160px;
     height:238px;
-    background: linear-gradient(to bottom, #f7e296 0px,#f7e296 160px,white 160px,white 238px);
 }
 
 .navigation-bar-name {
@@ -800,32 +868,37 @@ legend {
     line-height: 1.33;
     text-align: left;
     color: #000000;
+
+    display:block;
+
     margin:0;
     padding:0;
     width:160px;
-    display:block;
     padding-top:194px;
 }
 
 .services {
     margin-top:79px;
     height:393px;
+
     background: linear-gradient(to bottom, white 105px,#e5e5e5 105px,#e5e5e5 293px);
 }
 
 .services-wrapper {
-    padding-top:80px;
-    width:1160px;
     margin:auto;
     display:flex;
     position:relative;
+
+    padding-top:80px;
+    width:1160px;
+
 }
 
 .services-wrapper:before {
     content: "";
     background:#000000;
     position: absolute;
-    top: 4px;
+    top: 5px;
     right: 876px;
     
     width: 7px; 
@@ -834,6 +907,7 @@ legend {
 
 .services-info {
     display:flex;
+
     width:876px;
 }
 
@@ -844,8 +918,6 @@ legend {
 
 .services-button {
     display:inline-block;
-    width:278px;
-    height:40px;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -853,9 +925,13 @@ legend {
     letter-spacing: 3.6px;
     text-align: left;
     color: #000000;
+
+    box-sizing:border-box;
+
+    width:278px;
+    height:40px;
     margin-bottom:21px;
     margin-top:5px;
-    box-sizing:border-box;
 }
 
 .services-wrapper ul {
@@ -863,10 +939,11 @@ legend {
     padding:0;
 }
 .delivery-info {
-    margin:0px;
+    margin:0;
     padding:0;
     margin-left:124px;
     padding-right:324px;
+
     background:url("../img/delivery.svg") no-repeat;
     background-position-x: 556px;
     background-position-y: 10px;
@@ -877,9 +954,11 @@ legend {
     padding:0;
     margin-left:124px;
     padding-right:324px;
+
     background:url("../img/warranty.svg") no-repeat;
     background-position-x: 556px;
     background-position-y: 10px;
+
     display:none;
 }
 
@@ -888,9 +967,11 @@ legend {
     padding:0;
     margin-left:124px;
     padding-right:324px;
+
     background:url("../img/credit.svg") no-repeat;
     background-position-x: 556px;
     background-position-y: 10px;
+
     display:none;
 }
 
@@ -903,6 +984,7 @@ legend {
     letter-spacing: 0.5px;
     text-align: left;
     color: #000000;
+
     margin:0;
     padding:0;
 }
@@ -917,33 +999,39 @@ legend {
     letter-spacing: 0.2px;
     text-align: left;
     color: #464646;
+
     margin-top:32px;
 }
+
 .partners {
     width:1160px;
     margin:0 auto;
 }
+
 .partners-logo {
-    margin:0;
-    padding:0;
-    margin-top:94px;
     list-style:none;
     display:flex;
     justify-content:space-between;
+
+    margin:0;
+    padding:0;
+    margin-top:94px;
 }
+
 .contact-information {
-    margin-top:143px;
     display:flex;
     justify-content:space-between;
-    height:601px;
     position:relative;
+
+    margin-top:143px;
+    height:602px;
 }
 
 .contact-information:after {
     content: "";
     background:#000000;
     position: absolute;
-    top: -54px;
+    top: -53px;
     right: 1080px;
     
     width: 80px; 
@@ -954,7 +1042,7 @@ legend {
     content: "";
     background:#000000;
     position: absolute;
-    top: -54px;
+    top: -53px;
     right: 480px;
     
     width: 80px; 
@@ -964,42 +1052,49 @@ legend {
 .about-us {
     display:flex;
     flex-direction:column;
-    height:462px;
     justify-content:space-between;
+
+    height:462px;
 }
 
 .contacts-map {
     display:flex;
     flex-direction:column;
-    width:560px;
-    height:562px;
-    margin-left:139px;
     justify-content:space-between;
+
+    width:562px;
+    height:562px;
 }
+
 .about-us h3,
 .contacts-map h3 {
     display:block;
+
     margin:0;
     padding:0;
 }
+
 .button-about-us {
     margin-right:auto;
-    margin-top:80px;
+    margin-top:62px;
+    padding-left:23px;
 }
-.button-contact-us {
-    margin-top:83px;
-    margin-right:auto;
-}
-/*сетка footer*/
 
+.button-contact-us {
+    margin-top:33px;
+    margin-right:auto;
+    padding-bottom:50px;
+    padding-left:42px;
+}
 
 .footer-container-center {
-    width:1160px;
-    margin:0 auto;
     display:flex;
     flex-direction:column;
-    padding-top:60px;
     position:relative;
+
+    width:1160px;
+    margin:0 auto;
+    padding-top:60px;
 }
 
 .footer-container-center:after {
@@ -1019,35 +1114,42 @@ legend {
 }
 
 .footer-first {
+    display:flex;
+    justify-content:space-between;
+
     min-width:298px;
     margin:0;
     padding:0;
-    display:flex;
-    justify-content:space-between;
 }
 
 .footer-wrapper-second {
-    margin-top:30px;
     display:flex;
     justify-content:space-between;
+
+    margin-top:30px;
 }
+
 .footer-second {
+    display:flex;
+    justify-content:space-between;
+
     width:423px;
     margin:0;
     padding:0;
-    display:flex;
-    justify-content:space-between;
-    margin-top:5px;
+    margin-top:6px;
     margin-right:40px;
 }
+
 .footer-wrapper-third {
     display:flex;
-    margin-top:62px;
 
+    margin-top:62px;
 }
+
 .adress,
 .phone {
     display:block;
+    
     margin:0;
     padding:0;
 }
@@ -1055,13 +1157,15 @@ legend {
 .htmlacademy {
     margin-left:483px;
 }
+
 .footer-social-buttons {
-    width:141px;
     display:flex;
-    margin:0;
-    padding:0;
     justify-content:space-between;
     flex-wrap: wrap;
+
+    width:141px;
+    margin:0;
+    padding:0;
 }
 
 .social-button:focus {
@@ -1077,20 +1181,18 @@ legend {
     fill:rgba(255, 255, 255, 0.3);
 }
 
-/* catalog*/
 .login-entered,
-.login-entered-footer                   
-{
+.login-entered-footer {
     margin-left:20px;
 }
 
 .footer-first-catalog {
-    min-width:451px;
-    margin:0;
-    padding:0;
     display:flex;
     justify-content:flex-end;
 
+    min-width:451px;
+    margin:0;
+    padding:0;
 }
 
 .catalog-container {
@@ -1099,16 +1201,18 @@ legend {
 }
 
 .page-title {
+    display:block;
+
     margin:0;
     padding:0;
-    display:block;
-    margin-left:61px;
-    padding-top:55px;
+    margin-left:60px;
+    padding-top:51px;
 }
 
 .pagetree li {
     position: relative;
-    margin-right: 39px;
+
+    margin-right: 37px;
 }
 
 .pagetree li:last-child {
@@ -1124,27 +1228,17 @@ legend {
     background: url("../img/nav-arrow.svg");
     position: absolute;
     top: 10px;
-    right: -17px;
+    right: -20px;
 
     width: 4px; 
     height: 7px; 
 }
 
-.pagetree {
-    margin:0;
-    padding:0;
-    display:flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top:20px;
-    margin-bottom:46px;
-    margin-left:61px;
-}
-
 .pagetree-container {
     width:1160px;
     margin:0 auto;
-    background:linear-gradient(to bottom, #f7e296 0px,#f7e296 16px, white 16px,white 100%);
+
+    background:linear-gradient(to bottom, #f7e296 0px,#f7e296 14px, white 14px,white 100%);
 }
 
 .filters-catalog {
@@ -1153,11 +1247,12 @@ legend {
 
 .catalog-list {
     display:flex;
-    padding:0;
-    margin:0;
     flex-wrap:wrap;
     flex-direction:row;
     justify-content: flex-end;
+
+    padding:0;
+    margin:0;
     height:960px;
 
 }
@@ -1169,8 +1264,9 @@ legend {
 
 .catalog {
     width:972px;
-    margin-top:68px;
+    margin-top:70px;
 }
+
 .pagetree a {
     color: rgba(0, 0, 0, 0.3);
 }
@@ -1178,11 +1274,10 @@ legend {
 .filters-catalog {
     width:100%;
     margin:0 auto;
+
     display:flex;
     flex-direction:column;
 }
-
-
 
 .filters-container {         
     width:1160px;
@@ -1193,10 +1288,8 @@ legend {
 }
 
 .filters {
-
     position:relative; 
 }
-
 
 .filter-background-container {
     width:100%;
@@ -1230,11 +1323,13 @@ legend {
 
 .filters-name {
     display:flex;
+    position:relative;
+
     width:1160px;
     margin:0 auto;
     height:72px;
-    position:relative;
 }
+
 .filters-name b::before {
     content: "";
     position: absolute;
@@ -1271,19 +1366,23 @@ legend {
 
 .filters-name b {
     font-family: "Gilroy", Arial , sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 3.2px;
     text-align: left;
     color:#000000;
+    text-transform: uppercase;
+
     position:relative;
 
     flex-shrink:0;
-    width:268px;
+
     background-color: #d9d9d9;
-    padding-left:60px;
-    padding-top:20px;
+
+    width:266px;
+    padding-left:62px;
+    padding-top:23px;
 }
 
 .sorting {
@@ -1293,8 +1392,9 @@ legend {
     display:flex;
     justify-content:space-between;
     flex-shrink:1;
-    margin-left:73px;
     align-items:center;
+
+    margin-left:73px;
 }
 
 .sorting li {
@@ -1303,23 +1403,24 @@ legend {
 
 .sorting-name {
     font-family: "Gilroy", Arial , sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 3.2px;
     text-align: left;
     color:#000000;
-    margin-right:50px;
+    text-transform: uppercase;
 
-    
+    margin-right:54px;
 }
 
 .sorting-buttons {
     display:flex;
-    width:41px;
     justify-content:space-between;
-    margin-left:auto;
     align-items:center;
+
+    width:41px;
+    margin-left:auto;
 }
 
 .sorting a {
@@ -1330,21 +1431,25 @@ legend {
     color:#000000;
 
     display:block;
-    margin-right:30px;
+
+    margin-right:27px;
 }
+
 .filter-center-container {
     width:1160px;
     margin:0 auto;
 }
+
 .page-number-buttons {
     list-style:none;
     display:flex;
+    justify-content:space-between;
+
     margin:0;
     padding:0;
-    justify-content:space-between;
-    padding-right:30px;
-    padding-left:30px;
-    padding-top:25px;
+    padding-right:27px;
+    padding-left:31px;
+    padding-top:22px;
     padding-bottom:30px;
 }
 
@@ -1355,27 +1460,32 @@ legend {
     line-height: 1.5;
     letter-spacing: 3.2px;
     color: #000000;
+    text-transform:uppercase;
 }
 
 .page-number {
     list-style:none;
     display:flex;
+    justify-content:space-between;
+
     margin:0;
     padding:0;
     width:86px;
-    justify-content:space-between;
 }
+
 .page-number-container {
     width:759px;
     height:70px;
     margin-left:auto;
-    background-color: #ebebeb;
     margin-top:41px;
+
+    background-color: #ebebeb;
 }
 
 .catalog-item-image{
     margin:0;
     padding:0;
+
     display:block;
 }
 
@@ -1400,6 +1510,7 @@ legend {
     display: flex;
     flex-direction:row;
     position:relative;
+
     width:110px;
     top: 344px;
     left:998.5px;
@@ -1414,6 +1525,12 @@ legend {
 #product-3:checked ~  .shop-slides #slide3 {
   display:flex;
 }
+/*
+#product-1:checked ~ .shop-slides label[for="product-1"],
+#product-2:checked ~ .shop-slides label[for="product-2"],
+#product-3:checked ~ .shop-slides label[for="product-3"] {
+
+}*/
 
 .img-vr::before {
     content: "";
@@ -1485,6 +1602,7 @@ legend {
     margin-top:5px;
     width:163px;
     height:35px;
+
     fill:#ffc600;
 }
 
@@ -1501,6 +1619,7 @@ legend {
 
 .modal-question {
     display:none;
+
     top: 237px;
     left: 50%;
 
@@ -1573,26 +1692,43 @@ legend {
 .login-password-info textarea {
     width:720px;
     height:120px;
+
     background-color:#ebebeb;
     border:0;
     resize:none;
+
     padding-left:20px;
     padding-top:18px;
     padding-right:20px;
     padding-bottom:18px;
 }
 
-.question-icon-user,
-.login-icon-password {
+.question-icon-user {
     width:320px;
     height:50px;
+
     background-color:#ebebeb;
+
     border:0;
+
     padding-right:20px;
     padding-left:20px;
 }
 
-.login-icon-password,
+.login-icon-password {
+    width:320px;
+    height:50px;
+
+    background-color:#ebebeb;
+
+    border:0;
+
+    padding-right:20px;
+    padding-left:20px;
+
+    margin-left:40px;
+}
+
 .question-email {
     margin-left:40px;
 }
@@ -1629,6 +1765,7 @@ legend {
 
 .compare-footer a {
     position:relative;
+
     margin-right:62px;
 }
 
@@ -1645,6 +1782,7 @@ legend {
 
 .login-footer a {
     position:relative;
+
     margin-right:64px;
 }
 
@@ -1675,7 +1813,7 @@ legend {
 }
 
 .login-entered-footer a {
-    margin-right:20px;
+    margin-right:18px;
 }
 
 .logged a {
@@ -1709,6 +1847,7 @@ legend {
 
     width: 56px;
     height: 56px;
+
     opacity: 0.1;
     border: solid 2px #000000;
     border-radius:50%;
@@ -1717,6 +1856,7 @@ legend {
 .new::before {
     content: "NEW";
     position: absolute;
+
     top: 46px;
     right: 39px;
 
@@ -1728,4 +1868,280 @@ legend {
     line-height: 1.71;
     letter-spacing: 0.7px;
     text-align: center;
+}
+
+
+.search {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 440px;
+}
+  
+.search-label {
+    position: absolute;
+
+    top: 6px;
+    left: 3px;
+  
+    width: 20px;
+    height: 20px;
+  
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+  
+.search-label::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+  
+    display: none;
+    width: 400px;
+    height: 2px;
+  
+    background-color: #000000;
+}
+  
+.search-input {
+    position: relative;
+  
+    width: 320px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0;
+  
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #000000;
+  
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    
+    border: none;
+}
+
+.range-filter {
+    position:relative;
+
+    width: 327px;
+  }
+  
+.filter-item legend {
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color:#000000;
+
+    margin-top:82px;
+    margin-left:59px;
+}
+  
+.range-controls .scale {
+    margin-top:34px;
+    margin-left:59px;
+    margin-right:67px;
+
+    height: 2px;
+  
+    background: #dbdbdb;
+}
+
+.range-controls .bar {
+    width: 54.73%;
+    height: 2px;
+  
+    background: #91c92f;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 54px;
+}
+  
+.range-controls .toggle-max {
+    left: 167px;
+}
+
+.colors {
+    margin: 0;
+    padding: 0;
+    
+    border: none;
+}
+
+.colors ul {
+    margin:0;
+    padding:0;
+    margin-top:17px;
+    margin-left:98px;
+}
+
+.filter-option {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.86;
+    letter-spacing: 0.14px;
+    text-align: left;
+    color: #000000;
+
+    position:relative;
+}
+
+.colors label::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+
+    width: 23px;
+    height: 23px;
+  
+    background-image: url("../img/checkbox-off.svg");
+    cursor: pointer;
+}
+
+.colors label::after {
+    content: "";
+    position: absolute;
+    display:none;
+    top: 8px;
+    left: -40px;
+
+    width: 23px;
+    height: 23px;
+  
+    background-image: url("../img/checkbox-on.svg");
+    cursor: pointer;
+}
+
+.bluetooth label::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -40px;
+    
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*#filter-input:checked + .colors label::after[for="color-black"] {
+    display:block;
+}*/
+
+.colors legend {
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #000000;
+
+    margin-top:46px;
+    margin-left:59px;
+}
+
+.bluetooth {
+    margin: 0;
+    padding: 0;
+    
+    border: none;
+}
+
+.bluetooth legend {
+    font-family: "Gilroy", Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #000000;
+
+    margin-top:44px;
+    margin-left:59px;
+}
+
+.bluetooth ul {
+    margin:0;
+    padding:0;
+    margin-top:17px;
+    margin-left:98px;
+}
+
+.filter-range-price {
+    margin:0;
+    padding:0;
+    margin-top:10px;
+    margin-left:60px;
+}
+
+.filter-range-label {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-range-label-min {
+    flex-grow: 1;
+    margin-right: 18px;
+}
+  
+.filter-range-label-max {
+    flex-grow: 1;
+}
+  
+.filter-range-input {
+    width: 50px;
+    margin: 0;
+    padding: 0;
+  
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 0;
+  
+    background: none;
+    border: 0;
 }
