@@ -1907,12 +1907,12 @@ legend {
     background-color: #000000;
 }
   
-.search-input {
+.search-main {
     position: relative;
   
     width: 320px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 38px;
     padding: 0;
   
     font-weight: 300;
