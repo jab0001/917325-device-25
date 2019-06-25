@@ -56,7 +56,7 @@ a {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
     line-height: 2;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
     text-align: left;
     font-weight:300; 
 }
@@ -217,11 +217,9 @@ a {
 }
 
 .main-footer {
-    margin:0 auto;
     min-height:323px;
     color:#ffffff;
     background-color:#464646;
-
 }
 
 .footer-first a,
@@ -230,7 +228,6 @@ a {
     font-size: 15px;
     font-weight: 300;
     line-height: 2.4;
-    letter-spacing: 0.2px;
     text-align: left;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -320,7 +317,7 @@ a {
 
     margin:0;
     padding:0;
-    margin-top:23px;
+    margin-top:25px;
     margin-bottom:46px;
     margin-left:60px;
 }
@@ -371,7 +368,6 @@ legend {
     line-height: 1.33;
     letter-spacing: 0.2px;
     text-align: left;
-    float:left;
     
     margin:0;
     padding:0;
@@ -389,7 +385,7 @@ legend {
 
     margin:0;
     padding:0;
-    margin-top:27px;
+    margin-top:29px;
 }
 
 .login-footer a {
@@ -502,7 +498,7 @@ legend {
     content: "";
     background:#ffffff;
     position: absolute;
-    top: 53px;
+    top: 54px;
     right: 460px;
     
     width: 100px; 
@@ -528,6 +524,13 @@ legend {
     margin-top:20px;
 }
 
+.catalog-header-logo {
+    display:block;
+
+    margin-bottom:25px;
+    margin-top:22px;
+}
+
 .header-wrapper {
     display:flex;
     flex-direction:row;
@@ -542,7 +545,7 @@ legend {
     margin:0;
     padding:0;
     width:1044px;
-    margin-top:35px;
+    margin-top:39px;
     margin-right:auto;
 }
 .search {
@@ -564,7 +567,7 @@ legend {
 .myitems {
     position:relative;
 
-    margin-left:63px;
+    margin-left:60px;
 }
 
 .myitems a:before {
@@ -682,7 +685,7 @@ legend {
 }
 
 .first-slide:before {
-    content: counters(section,".") "1";
+    content: "01";
     position: absolute;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 179px;
@@ -704,7 +707,7 @@ legend {
 }
 
 .second-slide:before {
-    content: counters(section,".") "2";
+    content: "02";
     position: absolute;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 179px;
@@ -726,7 +729,7 @@ legend {
 }
 
 .third-slide:before {
-    content: counters(section,".") "3";
+    content: "03";
     position: absolute;
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 179px;
@@ -746,7 +749,7 @@ legend {
     margin:0;
     padding:0;
     margin-left:90px;
-    margin-top:4px;
+    margin-top:5px;
 }
 
 .slider-2 {
@@ -850,7 +853,7 @@ legend {
 
     margin:0;
     padding:0;
-    margin-top:51px;
+    margin-top:53px;
 }
 .navigation-bar-img {
     position:relative;
@@ -1000,7 +1003,7 @@ legend {
     text-align: left;
     color: #464646;
 
-    margin-top:32px;
+    margin-top:30px;
 }
 
 .partners {
@@ -1183,7 +1186,7 @@ legend {
 
 .login-entered,
 .login-entered-footer {
-    margin-left:20px;
+    margin-left:18px;
 }
 
 .footer-first-catalog {
@@ -1197,7 +1200,6 @@ legend {
 
 .catalog-container {
     width:100%;
-    margin:0 auto;
 }
 
 .page-title {
@@ -1205,7 +1207,7 @@ legend {
 
     margin:0;
     padding:0;
-    margin-left:60px;
+    margin-left:59px;
     padding-top:51px;
 }
 
@@ -1213,10 +1215,6 @@ legend {
     position: relative;
 
     margin-right: 37px;
-}
-
-.pagetree li:last-child {
-    margin-right: 0;
 }
 
 .pagetree-current::after {
@@ -1227,8 +1225,8 @@ legend {
     content: "";
     background: url("../img/nav-arrow.svg");
     position: absolute;
-    top: 10px;
-    right: -20px;
+    top: 9px;
+    right: -21px;
 
     width: 4px; 
     height: 7px; 
@@ -1262,9 +1260,14 @@ legend {
     margin-bottom:47px;
 }
 
+.catalog-item-container {
+    display:flex;
+    justify-content:space-between;
+}
+
 .catalog {
     width:972px;
-    margin-top:70px;
+    margin-top:69px;
 }
 
 .pagetree a {
@@ -1272,9 +1275,6 @@ legend {
 }
 
 .filters-catalog {
-    width:100%;
-    margin:0 auto;
-
     display:flex;
     flex-direction:column;
 }
@@ -1290,11 +1290,11 @@ legend {
 .filters {
     position:relative; 
 }
-
+/*
 .filter-background-container {
     width:100%;
     height:1217px;
-}
+}*/
 
 .filters::after {          
     content: "";                          
@@ -1327,7 +1327,6 @@ legend {
 
     width:1160px;
     margin:0 auto;
-    height:72px;
 }
 
 .filters-name b::before {
@@ -1342,26 +1341,10 @@ legend {
     background-color: #d9d9d9;
 }
 
-/* Второй вариант полосы
-
-.filters-name::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin-right: calc(50% - 50vw + 10px);
-    background-color: #ebebeb;
-}*/
-
 .filter-sorting-center {
-    margin:0 auto;
     background-color: #ebebeb;
     width:100%;
-    height:70px;
-    z-index:-2;
+    z-index:1;
 }
 
 .filters-name b {
@@ -1383,6 +1366,7 @@ legend {
     width:266px;
     padding-left:62px;
     padding-top:23px;
+    padding-bottom:23px;
 }
 
 .sorting {
@@ -1426,13 +1410,14 @@ legend {
 .sorting a {
     font-family: "OpenSans", Arial , sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.29;
     text-align: left;
     color:#000000;
 
     display:block;
 
-    margin-right:27px;
+    margin-right:29px;
 }
 
 .filter-center-container {
@@ -1766,7 +1751,7 @@ legend {
 .compare-footer a {
     position:relative;
 
-    margin-right:62px;
+    margin-right:63px;
 }
 
 .compare-footer a::before {
@@ -1813,7 +1798,9 @@ legend {
 }
 
 .login-entered-footer a {
-    margin-right:18px;
+    margin-right:17px;
+
+    letter-spacing: 0.4px;
 }
 
 .logged a {
@@ -1949,12 +1936,12 @@ legend {
     text-align: left;
     color:#000000;
 
-    margin-top:82px;
+    margin-top:81px;
     margin-left:59px;
 }
   
 .range-controls .scale {
-    margin-top:34px;
+    margin-top:35px;
     margin-left:59px;
     margin-right:67px;
 
@@ -2004,7 +1991,7 @@ legend {
 .colors ul {
     margin:0;
     padding:0;
-    margin-top:17px;
+    margin-top:18px;
     margin-left:98px;
 }
 
@@ -2050,8 +2037,8 @@ legend {
 .bluetooth label::before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -40px;
+    top: 6px;
+    left: -41px;
     
     width: 17px;
     height: 17px;
@@ -2074,7 +2061,7 @@ legend {
     text-align: left;
     color: #000000;
 
-    margin-top:46px;
+    margin-top:44px;
     margin-left:59px;
 }
 
@@ -2094,21 +2081,21 @@ legend {
     text-align: left;
     color: #000000;
 
-    margin-top:44px;
+    margin-top:43px;
     margin-left:59px;
 }
 
 .bluetooth ul {
     margin:0;
     padding:0;
-    margin-top:17px;
+    margin-top:18px;
     margin-left:98px;
 }
 
 .filter-range-price {
     margin:0;
     padding:0;
-    margin-top:10px;
+    margin-top:11px;
     margin-left:60px;
 }
 
@@ -2123,7 +2110,7 @@ legend {
 
 .filter-range-label-min {
     flex-grow: 1;
-    margin-right: 18px;
+    margin-right: 21px;
 }
   
 .filter-range-label-max {
