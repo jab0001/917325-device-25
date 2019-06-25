@@ -366,7 +366,7 @@ legend {
 .catalog-item h3 {
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.4px;
     text-align: left;
     
     margin:0;
@@ -1434,9 +1434,8 @@ legend {
     margin:0;
     padding:0;
     padding-right:27px;
-    padding-left:31px;
-    padding-top:22px;
-    padding-bottom:30px;
+    padding-left:29px;
+    padding-top:24px;
 }
 
 .page-number-buttons a {
