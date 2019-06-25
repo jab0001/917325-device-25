@@ -307,7 +307,7 @@ a {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.71;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.2px;
     text-align: left;
     color: rgba(0, 0, 0, 0.3);
 
@@ -1391,12 +1391,12 @@ legend {
     font-size: 16px;
     font-weight: 800;
     line-height: 1.5;
-    letter-spacing: 3.2px;
+    letter-spacing: 3.5px;
     text-align: left;
     color:#000000;
     text-transform: uppercase;
 
-    margin-right:54px;
+    margin-right:51px;
 }
 
 .sorting-buttons {
