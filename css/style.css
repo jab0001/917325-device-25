@@ -249,6 +249,9 @@ a {
     text-align: left;
     color:#ffffff;
     text-transform:uppercase;
+
+    margin-right: 28px;
+    margin-left: 5px;
 }
 
 .footer-second a:hover {
@@ -621,7 +624,7 @@ legend {
 
 .contacts-main,
 .about-contacts {
-    margin-left:108px;
+    margin-left:110px;
 }
 
 .warranty-main,
@@ -1141,7 +1144,7 @@ legend {
     margin:0;
     padding:0;
     margin-top:6px;
-    margin-right:40px;
+    margin-right:46px;
 }
 
 .footer-wrapper-third {
@@ -1479,6 +1482,7 @@ legend {
 }
 
  .slider-controls label {
+    position:relative;
     width: 10px;
     height: 10px;
     margin-right: 21px;
@@ -1510,12 +1514,25 @@ legend {
 #product-3:checked ~  .shop-slides #slide3 {
   display:flex;
 }
-/*
-#product-1:checked ~ .shop-slides label[for="product-1"],
-#product-2:checked ~ .shop-slides label[for="product-2"],
-#product-3:checked ~ .shop-slides label[for="product-3"] {
 
-}*/
+#product-1:checked ~ .shop-slides label[for="product-1"]::after,
+#product-2:checked ~ .shop-slides label[for="product-2"]::after,
+#product-3:checked ~ .shop-slides label[for="product-3"]::after {
+    position:absolute;
+    content:"";
+
+    top:25%;
+    left:25%;
+
+    width: 3px;
+    height: 3px;
+  
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index:1;
+}
 
 .img-vr::before {
     content: "";
@@ -2007,7 +2024,7 @@ legend {
     position:relative;
 }
 
-.colors label::before {
+.filter-input-checkbox + label::before {
     content: "";
     position: absolute;
     top: 8px;
@@ -2020,10 +2037,9 @@ legend {
     cursor: pointer;
 }
 
-.colors label::after {
+.filter-input-checkbox:checked + label::after {
     content: "";
     position: absolute;
-    display:none;
     top: 8px;
     left: -40px;
 
@@ -2034,7 +2050,7 @@ legend {
     cursor: pointer;
 }
 
-.bluetooth label::before {
+.filter-input-radio + label::before {
     content: "";
     position: absolute;
     top: 6px;
@@ -2048,9 +2064,19 @@ legend {
     cursor: pointer;
 }
 
-/*#filter-input:checked + .colors label::after[for="color-black"] {
-    display:block;
-}*/
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -33px;
+    
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 .colors legend {
     font-family: "Gilroy", Arial , sans-serif;
