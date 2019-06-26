@@ -35,23 +35,6 @@ a {
     text-decoration: none;
 }
 
-.search-main {
-    font-family:"OpenSans", Arial , sans-serif;
-    font-size:15px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    text-align: left;
-    font-weight:300;
-    color:rgba(0, 0, 0, 0.3);
-}
-.search-main:hover {
-    color:rgba(0, 0, 0, 0.6);
-}
-
-.search-main:focus {
-    color:#000000;
-}
-
 .navigation-main {
     font-family: "OpenSans", Arial , sans-serif;
     font-size:15px;
@@ -523,14 +506,14 @@ legend {
 .main-header-logo {
     display:block;
 
-    margin-bottom:27px;
+    margin-bottom:16px;
     margin-top:20px;
 }
 
 .catalog-header-logo {
     display:block;
 
-    margin-bottom:25px;
+    margin-bottom:14px;
     margin-top:22px;
 }
 
@@ -548,7 +531,7 @@ legend {
     margin:0;
     padding:0;
     width:1044px;
-    margin-top:39px;
+    margin-top:31px;
     margin-right:auto;
 }
 .search {
@@ -564,6 +547,7 @@ legend {
 
     margin:0;
     padding:0;
+    margin-top:11px;
     width:491px;
 }
 
@@ -1477,6 +1461,10 @@ legend {
     display:block;
 }
 
+.catalog-item-image:hover {
+    opacity:0.7;
+}
+
 .item-catalog-class {
     display:none;
 }
@@ -1887,7 +1875,7 @@ legend {
 .search-label {
     position: absolute;
 
-    top: 6px;
+    top: 20px;
     left: 3px;
   
     width: 20px;
@@ -1914,9 +1902,8 @@ legend {
 .search-main {
     position: relative;
   
-    width: 320px;
-    height: 30px;
-    margin-left: 38px;
+    width: 356px;
+    height: 38px;
     padding: 0;
   
     font-weight: 300;
@@ -1929,6 +1916,58 @@ legend {
     border: none;
     outline: none;
     cursor: pointer;
+
+    margin-top:11px;
+}
+
+.search-main[type="search"]{
+    padding-left: 38px;
+    padding-bottom: 9px;
+}
+
+.search-main:hover {
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.search-main:focus {
+    color:#000000;
+    border-bottom: 2px solid #000000;
+}
+
+.search-main:focus + .search-button {
+    display:block;
+}
+
+.search-button {
+    display:none;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: #000000;
+    background:none;
+
+    border:2px solid #000000;
+
+    cursor:pointer;
+
+    margin:0;
+    padding:0;
+    width:85px;
+    height:49px;
+}
+
+.search-button:hover {
+    background:#000000;
+    color:#ffffff;
+}
+
+.search-button:focus {
+    background:#000000;
+    color:rgba(255, 255, 255, 0.3);
 }
 
 .filter-item {
