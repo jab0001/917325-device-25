@@ -646,16 +646,31 @@ legend {
 .item-catalog-class {
     position:absolute;
     display:flex;
-    justify-content:space-between;
+    display:none;
 
     left:-60px;
+
     z-index:1;
+
     margin:0;
     padding:0;
-    padding-top:38px;
+    padding-top:20px;
     width:1160px;
-    padding-bottom:42px;
+    padding-bottom:36px;
+
     background-color:#f7e296;
+}
+
+.item-catalog-first {
+    margin-left:60px;
+}
+
+.item-catalog-second {
+    margin-left:56px;
+}
+
+.item-catalog-third {
+    margin-left:75px;
 }
 
 .item-catalog-first a {
@@ -669,7 +684,6 @@ legend {
 
     margin:0;
     padding:0;
-    margin-left:58px;
 }
 
 .item-catalog-third a {
@@ -677,7 +691,6 @@ legend {
 
     margin:0;
     padding:0;
-    margin-left:77px;
 }
 /*сетка main*/
 
