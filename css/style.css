@@ -1763,9 +1763,9 @@ legend {
     position:relative;
 }
 
-.myitems-footer a::before {
+.myitems-footer-img {
     content: "";
-    background:url("../img/cart.svg");
+
     position: absolute;
     top: 11px;
     right: 70px;
@@ -1780,9 +1780,9 @@ legend {
     margin-right:63px;
 }
 
-.compare-footer a::before {
+.compare-footer-img {
     content: "";
-    background:url("../img/compare.svg");
+
     position: absolute;
     top: 7px;
     right: 79px;
@@ -1797,9 +1797,9 @@ legend {
     margin-right:64px;
 }
 
-.login-footer-main a::before {
+.login-footer-main-img {
     content: "";
-    background:url("../img/user.svg");
+
     position: absolute;
     top: 4px;
     right: 56px;
@@ -1812,9 +1812,9 @@ legend {
     position:relative;
 }
 
-.login-entered-footer a::before {
+.login-entered-footer-img {
     content: "";
-    background:url("../img/user.svg");
+
     position: absolute;
     top: 12px;
     right: 165px;
