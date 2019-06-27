@@ -1767,7 +1767,7 @@ legend {
     content: "";
 
     position: absolute;
-    top: 11px;
+    top: 12px;
     right: 70px;
 
     width: 12px; 
@@ -1785,7 +1785,7 @@ legend {
 
     position: absolute;
     top: 7px;
-    right: 79px;
+    right: 83px;
     
     width: 10px; 
     height: 10px;   
@@ -1802,7 +1802,7 @@ legend {
 
     position: absolute;
     top: 4px;
-    right: 56px;
+    right: 61px;
 
     width: 13px; 
     height: 12px;   
@@ -1817,7 +1817,7 @@ legend {
 
     position: absolute;
     top: 12px;
-    right: 165px;
+    right: 164px;
 
     width: 13px; 
     height: 12px;   
