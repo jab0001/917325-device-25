@@ -352,11 +352,16 @@ legend {
     font-size: 18px;
     letter-spacing: 3.6px;
     text-align: center;
+    cursor:pointer;
+
+    background: linear-gradient(to bottom, #ebebeb 17px,#f0c52e 17px,#f0c52e 25px,#ebebeb 25px);
 
     margin:0;
     padding:0;
-    margin-top:41px;
-    margin-left:100px;
+    width:200px;
+    height:40px;
+    margin-top:31px;
+    margin-left:59px;
 }
 
 .catalog-item h3 {
@@ -2249,6 +2254,11 @@ legend {
   
     background-image: url("../img/checkbox-off.svg");
     cursor: pointer;
+}
+
+.filter-option label:hover::before,
+.filter-option label:hover::after {
+    opacity:0.6;
 }
 
 .filter-input-checkbox:checked + label::after {
