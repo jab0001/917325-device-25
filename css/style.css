@@ -192,15 +192,15 @@ a {
     text-transform:uppercase;
 }
 
-.button-contacts-us:hover,
+.button-contact-us:hover,
 .button-about-us:hover {
-    background-color:#f0c52e;
+    background:#f0c52e;
 }
 
-.button-contacts-us:focus,
+.button-contact-us:focus,
 .button-about-us:focus {
     color:rgba(0, 0, 0, 0.3);
-    background-color:#f0c52e;
+    background:#f0c52e;
 }
 
 .main-footer {
@@ -1185,15 +1185,30 @@ legend {
 
 .button-about-us {
     margin-right:auto;
-    margin-top:62px;
-    padding-left:23px;
+    margin-top:50px;
+    padding-left:2px;
+    padding-bottom:10px;
+    padding-top:12px;
+    cursor:pointer;
+
+    background: linear-gradient(to bottom, white 21px,#f0c52e 21px,#f0c52e 29px,white 29px);
+
+    width:260px;
+    height:40px;
 }
 
 .button-contact-us {
-    margin-top:33px;
+    margin-top:20px;
     margin-right:auto;
-    padding-bottom:50px;
-    padding-left:42px;
+    margin-bottom:34px;
+    padding-left:4px;
+    padding-top:12px;
+    cursor:pointer;
+
+    background: linear-gradient(to bottom, white 21px,#f0c52e 21px,#f0c52e 29px,white 29px);
+
+    width:260px;
+    height:40px;
 }
 
 .footer-container-center {
