@@ -531,6 +531,14 @@ legend {
     margin-top:22px;
 }
 
+.catalog-header-logo:hover {
+    opacity: 0.6;
+}
+
+.catalog-header-logo:focus {
+    opacity: 0.3;
+}
+
 .header-wrapper {
     display:flex;
     flex-direction:row;
@@ -1341,22 +1349,22 @@ legend {
     padding-top:51px;
 }
 
-.pagetree li {
+.pagetree a {
     position: relative;
 
     margin-right: 37px;
 }
 
-.pagetree-current::after {
+.pagetree-current a::after {
     display:none;
 }
 
-.pagetree li::after {
+.pagetree a::after {
     content: "";
     background: url("../img/nav-arrow.svg");
     position: absolute;
-    top: 9px;
-    right: -21px;
+    top: 6px;
+    right: -19px;
 
     width: 4px; 
     height: 7px; 
@@ -1544,17 +1552,37 @@ legend {
     margin-left:auto;
 }
 
+.sorting-buttons svg {
+    fill:#d3d1d2;
+}
+
+.sorting-buttons svg:hover {
+    fill:#a7a5a6;
+}
+
+.sorting-buttons svg:focus {
+    fill:#231f20;
+}
+
 .sorting a {
     font-family: "OpenSans", Arial , sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.29;
     text-align: left;
-    color:#000000;
+    color: rgba(0, 0, 0, 0.3);
 
     display:block;
 
     margin-right:29px;
+}
+
+.sorting a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting a:focus {
+    color: #000000;
 }
 
 .filter-center-container {
