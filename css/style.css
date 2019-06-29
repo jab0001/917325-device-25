@@ -885,10 +885,21 @@ legend {
 .navigation-bar-img {
     position:relative;
     display:block;
+
     background: linear-gradient(to bottom, #f7e296 0px,#f7e296 160px,white 160px,white 238px);
 
     width:160px;
     height:238px;
+}
+
+.navigation-bar-img:hover {
+    background: linear-gradient(to bottom, #f0c52e 0px,#f0c52e 160px,white 160px,white 238px);
+}
+
+.navigation-bar-img:focus {
+    background: linear-gradient(to bottom, #f0c52e 0px,#f0c52e 160px,white 160px,white 238px);
+
+    opacity:0.3;
 }
 
 .navigation-bar-name {
