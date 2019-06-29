@@ -1440,7 +1440,7 @@ legend {
     content: "";
     background:#000000;
     position: absolute;
-    top: -12px;
+    bottom: 34px;
     
     width: 201px; 
     height: 2px;  
@@ -1624,6 +1624,18 @@ legend {
     width:86px;
     margin-left:2px;
     margin-top:24px;
+}
+
+.page-number a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.page-number a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.page-number a:focus {
+    color:#000000;
 }
 
 .page-controls {
@@ -2210,7 +2222,7 @@ legend {
     text-align: left;
     color:#000000;
 
-    margin-top:81px;
+    padding-top:82px;
     margin-left:59px;
 }
   
@@ -2351,7 +2363,7 @@ legend {
     text-align: left;
     color: #000000;
 
-    margin-top:44px;
+    padding-top:44px;
     margin-left:59px;
 }
 
@@ -2373,7 +2385,7 @@ legend {
     text-align: left;
     color: #000000;
 
-    margin-top:43px;
+    padding-top:44px;
     margin-left:59px;
 }
 
