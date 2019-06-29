@@ -1272,6 +1272,10 @@ legend {
     margin-top:30px;
 }
 
+.footer-wrap-helper {
+    margin-top:27px;
+}
+
 .footer-second {
     display:flex;
     justify-content:space-between;
