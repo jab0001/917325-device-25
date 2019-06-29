@@ -1103,6 +1103,30 @@ legend {
     margin-top:94px;
 }
 
+.logo-1:hover {
+    background-image: url("../img/logo-1-1.png");
+    width:260px;
+    height:100px;
+}
+
+.logo-2:hover {
+    background-image: url("../img/logo-2-2.png");
+    width:260px;
+    height:100px;
+}
+
+.logo-3:hover {
+    background-image: url("../img/logo-3-3.png");
+    width:260px;
+    height:100px;
+}
+
+.logo-4:hover {
+    background-image: url("../img/logo-4-4.png");
+    width:260px;
+    height:100px;
+}
+
 .contact-information {
     display:flex;
     justify-content:space-between;
