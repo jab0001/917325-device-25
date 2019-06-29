@@ -923,6 +923,10 @@ legend {
     opacity:0.3;
 }
 
+/*.navigation-bar-name:focus {
+    color:#cbcbcb;
+}*/
+
 .navigation-bar-name {
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 18px;
