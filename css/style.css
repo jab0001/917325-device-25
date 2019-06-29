@@ -46,11 +46,14 @@ a {
 
 .navigation-main a:hover {
     color:rgba(0, 0, 0, 0.6);
+    opacity:0.6;
 }
 
 .navigation-main a:focus {
     color:rgba(0, 0, 0, 0.3);
+    opacity:0.3;
 }
+
 .site-navigation {
     font-size:18px;
     line-height:1.33;
@@ -73,6 +76,7 @@ a {
     text-align:left;
     font-weight:300;
     text-transform:none;
+    color:#000000;
 }
 .item-catalog-class a:hover {
     color:rgba(0, 0, 0, 0.6);
@@ -430,17 +434,21 @@ legend {
     margin:0;
     padding:0;
     width:220px;
+    height:32px;
+    padding-top:9px;
     padding-left:2px;
+
+    background: linear-gradient(to bottom, white 18px,#f0c52e 18px,#f0c52e 26px,white 26px);
 }
 
 
 .more-info:hover {
-    background-color:#f0c52e;
+    background:#f0c52e;
 }
 
 .more-info:focus {
     color:rgba(0, 0, 0, 0.3);
-    background-color:#f0c52e;
+    background:#f0c52e;
 
 }
 .specification b {
@@ -640,7 +648,9 @@ legend {
     right: -29px;
     
     width: 16px; 
-    height: 16px;  
+    height: 16px; 
+
+    opacity: 0.3;
 }
 
 .item-catalog-class {
@@ -836,7 +846,7 @@ legend {
 .slide-wrapper2 p,
 .slide-wrapper3 p {
     margin-top:20px;
-    margin-bottom:50px;
+    margin-bottom:41px;
 }
 
 .slide-navigation ul {
@@ -854,7 +864,7 @@ legend {
     margin:0;
     padding:0;
     width:429px;
-    margin-top:57px;
+    margin-top:50px;
 }
 
 .specification p {
@@ -870,7 +880,7 @@ legend {
 
     margin:0;
     padding:0;
-    margin-top:53px;
+    margin-top:52px;
 }
 .navigation-bar-img {
     position:relative;
@@ -899,7 +909,7 @@ legend {
 }
 
 .services {
-    margin-top:79px;
+    margin-top:78px;
     height:393px;
 
     background: linear-gradient(to bottom, white 105px,#e5e5e5 105px,#e5e5e5 293px);
@@ -937,6 +947,10 @@ legend {
     list-style:none;
 }
 
+.services-buttons {
+    width:278px;
+}
+
 .services-button {
     display:inline-block;
     font-family: "Gilroy", Arial , sans-serif;
@@ -945,14 +959,53 @@ legend {
     line-height: 1.33;
     letter-spacing: 3.6px;
     text-align: left;
+    text-transform:uppercase;
     color: #000000;
 
     box-sizing:border-box;
+    border:none;
 
-    width:278px;
+    cursor:pointer;
+
     height:40px;
-    margin-bottom:21px;
     margin-top:5px;
+}
+
+.warranty-button {
+    padding-left:25px;
+    width:160px;
+    margin-top:25px;
+
+    background: linear-gradient(to bottom, #e5e5e5 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
+}
+
+.warranty-button:hover,
+.delivery-button:hover,
+.credit-button:hover {
+    background:#f0c52e;
+}
+
+.warranty-button:focus,
+.delivery-button:focus,
+.credit-button:focus {
+    width:278px;
+    background:#000000;
+    color:#f7e184;
+}
+
+.delivery-button {
+    padding-left:18px;
+    width:160px;
+
+    background: linear-gradient(to bottom, white 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
+}
+
+.credit-button {
+    padding-left:36px;
+    width:160px;
+    margin-top:25px;
+
+    background: linear-gradient(to bottom, #e5e5e5 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
 }
 
 .services-wrapper ul {
@@ -1943,7 +1996,7 @@ legend {
     font-size: 15px;
     line-height: 30px;
     font-family: "Open Sans", "Arial", sans-serif;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
   
     background-color: transparent;
     border: none;
