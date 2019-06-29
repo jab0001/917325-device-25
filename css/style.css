@@ -1563,15 +1563,15 @@ legend {
     margin-left:auto;
 }
 
-.sorting-buttons svg {
+.sorting-buttons a {
     fill:rgba(0, 0, 0, 0.2);
 }
 
-.sorting-buttons svg:hover {
+.sorting-buttons a:hover {
     fill:rgba(0, 0, 0, 0.4);
 }
 
-.sorting-buttons:focus {
+.sorting-buttons a:focus {
     fill:#231F20;
 }
 
