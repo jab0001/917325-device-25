@@ -917,7 +917,9 @@ legend {
 
 .navigation-bar-img:focus {
     background: linear-gradient(to bottom, #f0c52e 0px,#f0c52e 160px,white 160px,white 238px);
+}
 
+.navigation-bar-img:focus::before {
     opacity:0.3;
 }
 
@@ -1562,15 +1564,15 @@ legend {
 }
 
 .sorting-buttons svg {
-    fill:#d3d1d2;
+    fill:rgba(0, 0, 0, 0.2);
 }
 
 .sorting-buttons svg:hover {
-    fill:#a7a5a6;
+    fill:rgba(0, 0, 0, 0.4);
 }
 
-.sorting-buttons svg:focus {
-    fill:#231f20;
+.sorting-buttons:focus {
+    fill:#231F20;
 }
 
 .sorting a {
