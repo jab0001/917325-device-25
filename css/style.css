@@ -251,10 +251,6 @@ a {
     color:rgba(255, 255, 255, 0.3);
 }
 
-.footer-social a {
-    color:#ffffff;
-}
-
 .footer-social {
     margin-left:auto;
 }
@@ -267,6 +263,14 @@ a {
     text-align: right;
     color:#ffffff;
     letter-spacing: 0.4px;
+}
+
+.phone:hover {
+    opacity:0.6;
+}
+
+.phone:focus {
+    opacity:0.3;
 }
 
 .adress {
@@ -1284,6 +1288,14 @@ legend {
     margin-left:483px;
 }
 
+.htmlacademy:hover {
+    opacity: 0.6;
+}
+
+.htmlacademy:focus {
+    opacity: 0.3;
+}
+
 .footer-social-buttons {
     display:flex;
     justify-content:space-between;
@@ -1300,11 +1312,6 @@ legend {
 
 .social-button:hover {
     opacity:0.6;
-}
-
-.social-button:hover path,
-.social-button:focus path {
-    fill:rgba(255, 255, 255, 0.3);
 }
 
 .login-entered,
