@@ -2402,6 +2402,18 @@ legend {
     cursor: pointer;
 }
 
+.range-controls .toggle:hover {
+    width: 5px;
+    height: 5px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius:50%;
+    cursor: pointer;
+}
+
 .range-controls .toggle-min {
     left: 54px;
 }
