@@ -364,6 +364,15 @@ legend {
     margin-left:59px;
 }
 
+.filter-button:hover {
+    background:#f0c52e;
+}
+
+.filter-button:focus {
+    background:#f0c52e;
+    color:rgba(0, 0, 0, 0.3);
+}
+
 .catalog-item h3 {
     font-size: 18px;
     line-height: 1.33;
@@ -1409,6 +1418,8 @@ legend {
 }
 
 .catalog-item {
+    position:relative;
+    
     margin-left:40px;
     margin-bottom:47px;
 }
@@ -1692,10 +1703,6 @@ legend {
     padding:0;
 
     display:block;
-}
-
-.catalog-item-image:hover {
-    opacity:0.7;
 }
 
  .slider-controls label {
@@ -2445,4 +2452,80 @@ legend {
   
     background: none;
     border: 0;
+}
+
+.catalog-item-hover {
+    position: absolute;
+    top: -170px;
+    left: -91px;
+  
+    display:none;
+    flex-direction:column;
+    width:360px;
+    height:380px;
+    margin-top: 169px;
+    margin-right: 90px;
+    margin-left: 90px;
+  
+    text-align: center;
+  
+    background-color: rgba(238, 238, 238, 0.7);
+}
+  
+.catalog-item:hover .catalog-item-hover {
+    display: flex;
+}
+  
+.catalog-item-hover .btn {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color:#000000;
+    text-transform:uppercase;
+
+    width: 200px;
+    height:32px;
+
+    margin-top: 180px;
+    margin-bottom:7px;
+    margin-left: 83px;
+    padding-top:8px;
+  
+    border: none;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 15px,#f0c52e 15px,#f0c52e 23px,rgba(0, 0, 0, 0) 23px);
+}
+
+.catalog-item-hover .btn:hover {
+      background:#f0c52e;
+}
+
+.catalog-item-hover .btn:focus {
+      background:#f0c52e;
+      color: rgba(0, 0, 0, 0.3);
+}
+  
+.catalog-item-add {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.54;
+    letter-spacing: 0.13px;
+    text-align: center;
+    color: #000000;
+  
+    opacity: 0.5;
+
+    margin-left:8px;
+}
+  
+.catalog-item-add:hover {
+    opacity: 1;
+}
+  
+.catalog-item-add:active {
+    opacity: 0.2;
 }
