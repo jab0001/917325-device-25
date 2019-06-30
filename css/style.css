@@ -1878,6 +1878,8 @@ legend {
 
     width: 55px;
     height: 55px;
+
+    outline:none;
   
     font-size: 0;
   
@@ -2078,6 +2080,8 @@ legend {
     text-transform:uppercase;
     border:none;
     cursor:pointer;
+
+    outline:none;
 
     background: linear-gradient(to bottom, white 16px,#f0c52e 16px,#f0c52e 24px,white 24px);
 
