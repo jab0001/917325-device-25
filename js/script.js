@@ -1,22 +1,22 @@
-var ButtonDelivery = document.querySelector(".delivery-button"),
-    ButtonWarranty = document.querySelector(".warranty-button"),
-    ButtonCredit = document.querySelector(".credit-button"),
-    DeliveryInfo = document.querySelector(".delivery-info"),
-    WarrantyInfo = document.querySelector(".warranty-info"),
-    CreditInfo = document.querySelector(".credit-info");
+var buttonDelivery = document.querySelector(".delivery-button"),
+    buttonWarranty = document.querySelector(".warranty-button"),
+    buttonCredit = document.querySelector(".credit-button"),
+    deliveryInfo = document.querySelector(".delivery-info"),
+    warrantyInfo = document.querySelector(".warranty-info"),
+    creditInfo = document.querySelector(".credit-info");
 
 
-ButtonDelivery.addEventListener("click", function (evt) {
+buttonDelivery.addEventListener("click", function (evt) {
         evt.preventDefault();
-        DeliveryInfo.classList.add(".info-show");
+        deliveryInfo.classList.add(".info-show");
 })
 
-ButtonWarranty.addEventListener("click", function (evt) {
+buttonWarranty.addEventListener("click", function (evt) {
         evt.preventDefault();
-        WarrantyInfo.classList.add(".info-show");
+        warrantyInfo.classList.add(".info-show");
 })
 
-ButtonCredit.addEventListener("click", function (evt) {
+buttonCredit.addEventListener("click", function (evt) {
         evt.preventDefault();
-        CreditInfo.classList.add(".info-show");
+        creditInfo.classList.add(".info-show");
 })
