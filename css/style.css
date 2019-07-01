@@ -960,7 +960,7 @@ legend {
 }
 
 .services {
-    margin-top:78px;
+    margin-top:80px;
     height:393px;
 
     background: linear-gradient(to bottom, white 105px,#e5e5e5 105px,#e5e5e5 293px);
@@ -971,7 +971,6 @@ legend {
     display:flex;
     position:relative;
 
-    padding-top:80px;
     width:1160px;
 
 }
@@ -1002,6 +1001,12 @@ legend {
     width:278px;
 }
 
+.services-buttons li {
+    height:40px;
+
+    margin-bottom:24px;
+}
+
 .services-button {
     display:inline-block;
     font-family: "Gilroy", Arial , sans-serif;
@@ -1021,13 +1026,103 @@ legend {
     cursor:pointer;
 
     height:40px;
-    margin-top:5px;
+    margin-top:7px;
+}
+
+.services-wrapper ul {
+    margin:0;
+    padding:0;
+
+    margin-top:79px;
+}
+
+.delivery-info {
+    display:none;
+    position:relative;
+    margin:0;
+    padding:0;
+    margin-left:124px;
+    padding-right:324px;
+}
+
+.delivery-info::after {
+    content:"";
+    position:absolute;
+
+    width:136px;
+    height:164px;
+
+    bottom:16px;
+    right:60px;
+
+
+    background:url("../img/delivery.svg") no-repeat;
+}
+
+.warranty-info::after {
+    content:"";
+    position:absolute;
+
+    width:171px;
+    height:194px;
+
+    bottom:9px;
+    right:40px;
+
+    background:url("../img/warranty.svg") no-repeat;
+}
+
+.credit-info::after {
+    content:"";
+    position:absolute;
+
+    width:156px;
+    height:186px;
+
+    bottom:19px;
+    right:65px;
+
+    background:url("../img/credit.svg") no-repeat;
+}
+
+.warranty-info {
+    display:none;
+    position:relative;
+    margin:0px;
+    padding:0;
+    margin-left:124px;
+    padding-right:324px;
+}
+
+.credit-info {
+    display:none;
+    position:relative;
+    margin:0px;
+    padding:0;
+    margin-left:124px;
+    padding-right:324px;
+}
+
+.delivery-button {
+    padding-left:20px;
+    width:160px;
+    padding-top:7px;
+
+    background: linear-gradient(to bottom, white 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
 }
 
 .warranty-button {
     padding-left:25px;
     width:160px;
-    margin-top:25px;
+    padding-top:8px;
+
+    background: linear-gradient(to bottom, #e5e5e5 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
+}
+
+.credit-button {
+    padding-left:38px;
+    width:160px;
+    padding-top:8px;
 
     background: linear-gradient(to bottom, #e5e5e5 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
 }
@@ -1038,74 +1133,20 @@ legend {
     background:#f0c52e;
 }
 
-.warranty-button:focus,
-.delivery-button:focus,
-.credit-button:focus {
+#services-control-1:checked ~ .services-buttons .delivery-button,
+#services-control-2:checked ~ .services-buttons .warranty-button,
+#services-control-3:checked ~ .services-buttons .credit-button {
     width:278px;
     background:#000000;
     color:#f7e184;
 }
 
-.delivery-button {
-    padding-left:18px;
-    width:160px;
-
-    background: linear-gradient(to bottom, white 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
-}
-
-.credit-button {
-    padding-left:36px;
-    width:160px;
-    margin-top:25px;
-
-    background: linear-gradient(to bottom, #e5e5e5 16px,#f0c52e 16px,#f0c52e 24px,#e5e5e5 24px);
-}
-
-.services-wrapper ul {
-    margin:0;
-    padding:0;
-}
-
-.info-show {
-    display:block;
-}
-
-.delivery-info {
-
-    margin:0;
-    padding:0;
-    margin-left:124px;
-    padding-right:324px;
-
-    background:url("../img/delivery.svg") no-repeat;
-    background-position-x: 556px;
-    background-position-y: 10px;
-}
-
-.warranty-info {
-    display:none;
-
-    margin:0px;
-    padding:0;
-    margin-left:124px;
-    padding-right:324px;
-
-    background:url("../img/warranty.svg") no-repeat;
-    background-position-x: 556px;
-    background-position-y: 10px;
-}
-
-.credit-info {
-    display:none;
-
-    margin:0px;
-    padding:0;
-    margin-left:124px;
-    padding-right:324px;
-
-    background:url("../img/credit.svg") no-repeat;
-    background-position-x: 556px;
-    background-position-y: 10px;
+#services-control-2:checked ~ .services-info .warranty-info,
+#services-control-3:checked ~ .services-info .credit-info,
+#services-control-1:checked ~ .services-info .delivery-info,
+#services-control-2:checked ~ .services-info .warranty-info,
+#services-control-3:checked ~ .services-info .credit-info {
+  display: block;
 }
 
 .delivery-info h3,
