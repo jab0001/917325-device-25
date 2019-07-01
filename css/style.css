@@ -669,6 +669,11 @@ legend {
     padding:0;
 }
 
+.catalog-main-plus:hover + .item-catalog-class,
+.site-navigation-current-plus:hover + .item-catalog-class {
+    display:flex;
+}
+
 .catalog-main-plus::before,
 .site-navigation-current-plus::before {
     content: "";
@@ -685,7 +690,6 @@ legend {
 
 .item-catalog-class {
     position:absolute;
-    display:flex;
     display:none;
 
     left:-60px;
@@ -1061,7 +1065,14 @@ legend {
     margin:0;
     padding:0;
 }
+
+.info-show {
+    display:block;
+}
+
 .delivery-info {
+    display:none;
+    
     margin:0;
     padding:0;
     margin-left:124px;
@@ -1073,6 +1084,8 @@ legend {
 }
 
 .warranty-info {
+    display:none;
+
     margin:0px;
     padding:0;
     margin-left:124px;
@@ -1081,11 +1094,11 @@ legend {
     background:url("../img/warranty.svg") no-repeat;
     background-position-x: 556px;
     background-position-y: 10px;
-
-    display:none;
 }
 
 .credit-info {
+    display:none;
+
     margin:0px;
     padding:0;
     margin-left:124px;
@@ -1094,8 +1107,6 @@ legend {
     background:url("../img/credit.svg") no-repeat;
     background-position-x: 556px;
     background-position-y: 10px;
-
-    display:none;
 }
 
 .delivery-info h3,
