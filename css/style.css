@@ -2485,7 +2485,7 @@ legend {
     top: 8px;
     left: -40px;
 
-    width: 23px;
+    width: 27px;
     height: 23px;
   
     background-image: url("../img/checkbox-on.svg");
@@ -2495,28 +2495,27 @@ legend {
 .filter-input-radio + label::before {
     content: "";
     position: absolute;
-    top: 6px;
-    left: -41px;
+    top: 7px;
+    left: -39px;
     
-    width: 17px;
-    height: 17px;
+    width: 25px;
+    height: 25px;
     padding: 0;
-    border: 5px solid #000000;
-    border-radius: 50%;
+    background-image: url("../img/radio-off.svg");
     cursor: pointer;
 }
 
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    top: 14px;
-    left: -33px;
+    top: 7px;
+    left: -39px;
     
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 25px;
     padding: 0;
-    background-color: #000000;
-    border-radius: 50%;
+    background-image: url("../img/radio-on.svg");
+
     cursor: pointer;
 }
 
@@ -2582,7 +2581,7 @@ legend {
 
 .filter-range-label-min {
     flex-grow: 1;
-    margin-right: 21px;
+    margin-right: 18px;
 }
   
 .filter-range-label-max {
