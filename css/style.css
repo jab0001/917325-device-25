@@ -2065,6 +2065,7 @@ legend {
 }
 
 .question-icon-user:focus {
+    color: #464646;
     background:#ffffff;
     border:solid 3px #f0c52e;
 }
@@ -2741,4 +2742,12 @@ input::-ms-clear {
   
 .catalog-item-add:active {
     opacity: 0.2;
+}
+
+.modal-question-active {
+    display:block;
+}
+
+.modal-map-active {
+    display:block;
 }
