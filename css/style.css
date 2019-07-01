@@ -420,6 +420,8 @@ legend {
     letter-spacing: 0.5px;
     text-align: left;
     color: #000000;
+
+    z-index:2;
 }
 
 .first-slide p,
@@ -756,6 +758,8 @@ legend {
     text-align: right;
     color: white;
 
+    z-index:1;
+
     top: -9px;
     right: 46px;
 }
@@ -778,6 +782,8 @@ legend {
     text-align: right;
     color: white;
 
+    z-index:1;
+
     top: -9px;
     right: 46px;
 }
@@ -799,6 +805,8 @@ legend {
     letter-spacing: 1.8px;
     text-align: right;
     color: white;
+
+    z-index:1;
 
     top: -9px;
     right: 46px; 
@@ -1010,7 +1018,7 @@ legend {
     font-weight: 800;
     line-height: 1.33;
     letter-spacing: 3.6px;
-    text-align: left;
+    text-align:left;
     text-transform:uppercase;
     color: #000000;
 
@@ -1279,7 +1287,7 @@ legend {
     background: linear-gradient(to bottom, white 16px,#f0c52e 16px,#f0c52e 24px,white 24px);
 
     width:260px;
-    height:22px;
+    height:27px;
 }
 
 .button-contact-us {
@@ -1884,11 +1892,11 @@ legend {
     fill:#ffc600;
 }
 
-.footer-logo:hover {
+.footer-logo-catalog:hover {
     fill:#c49a22;
 }
 
-.footer-logo:focus {
+.footer-logo-catalog:focus {
     fill:#8b7637;
 }
 
@@ -2354,6 +2362,14 @@ legend {
 .search-main[type="search"]{
     padding-left: 38px;
     padding-bottom: 9px;
+}
+
+input::-webkit-search-cancel-button { 
+    display:none; 
+}
+
+input::-ms-clear {
+    display: none;
 }
 
 .search-main:hover {
