@@ -187,16 +187,19 @@
     <section class="services">
       <div class="services-wrapper">
         <h2 class="visually-hidden">Услуги для покупателя</h2>
+        <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
+        <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio" name="services-control">
+        <input class="services-slider-input  visually-hidden" id="services-control-3" type="radio" name="services-control">
         <div class="services-buttons">
           <ul>
             <li>
-              <button class="services-button delivery-button" type="button">Доставка</button>
+              <label class="services-button delivery-button" for="services-control-1">Доставка</label>
             </li>
             <li>
-              <button class="services-button warranty-button" type="button">Гарантия</button>
+              <label class="services-button warranty-button" for="services-control-2">Гарантия</label>
             </li>
             <li>
-              <button class="services-button credit-button" type="button">Кредит</button>
+              <label class="services-button credit-button" for="services-control-3">Кредит</label>
             </li>
           </ul>
         </div>
@@ -417,7 +420,6 @@
       Закрыть
     </button>
   </section>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
