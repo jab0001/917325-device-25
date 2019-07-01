@@ -9,14 +9,14 @@ var ButtonDelivery = document.querySelector(".delivery-button"),
 ButtonDelivery.addEventListener("click", function (evt) {
         evt.preventDefault();
         DeliveryInfo.classList.add(".info-show");
-});
+})
 
 ButtonWarranty.addEventListener("click", function (evt) {
         evt.preventDefault();
         WarrantyInfo.classList.add(".info-show");
-});
+})
 
 ButtonCredit.addEventListener("click", function (evt) {
         evt.preventDefault();
         CreditInfo.classList.add(".info-show");
-});
+})
