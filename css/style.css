@@ -218,11 +218,13 @@ a {
     text-align: left;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .footer-first a:hover,
 .footer-first-catalog a:hover {
     color:#ffffff;
     opacity: 0.6;
 }
+
 .footer-first a:focus,
 .footer-first-catalog a:focus {
     color:rgba(255, 255, 255, 0.3);
