@@ -1,5 +1,8 @@
 var popupWriteLink = document.querySelector(".button-contact-us"),
     popupWrite = document.querySelector(".modal-question"),
+    userName = popupWrite.querySelector("[name=user-name]"),
+    userEmail = popupWrite.querySelector("[name=user-email]"),
+    popupWriteForm = popupWrite.querySelector("form"),
     popupMapLink = document.querySelector(".main-contacts-map"),
     popupMap = document.querySelector(".modal-map"),
     popupWriteClose = document.querySelector(".modal-close-question"),
@@ -8,11 +11,20 @@ var popupWriteLink = document.querySelector(".button-contact-us"),
 popupWriteLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupWrite.classList.add("modal-question-active");
+  userName.focus();
+})
+
+popupWriteForm.addEventListener("submit", function (evt) {
+  if (!userName.value || !userEmail.value) {
+    evt.preventDefault();
+    popupWrite.classList.add("modal-question-error");
+  }
 })
 
 popupWriteClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupWrite.classList.remove("modal-question-active");
+  popupWrite.classList.remove("modal-question-error");
 })
 
 popupMapLink.addEventListener("click", function (evt) {
