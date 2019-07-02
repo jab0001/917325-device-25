@@ -1,23 +1,27 @@
 @font-face {
 font-family: "Gilroy";
-    src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"); 
+    src: url("../fonts/web/gilroyextrabold.woff2") format("woff2");
+    src: url("../fonts/web/gilroyextrabold.woff") format("woff"); 
     font-weight: 800; 
 }
 @font-face {
 font-family: "GilroyLight";
-    src: url("../fonts/web/gilroylight.woff2") format("woff2");  
+    src: url("../fonts/web/gilroylight.woff2") format("woff2");
+    src: url("../fonts/web/gilroylight.woff") format("woff");
     font-weight: 300; 
 }
 
 @font-face {
 font-family: "OpenSans";
-    src: url("../fonts/web/opensans.woff2") format("woff2"); 
+    src: url("../fonts/web/opensans.woff2") format("woff2");
+    src: url("../fonts/web/opensans.woff") format("woff"); 
     font-weight: 400; 
 }
 
 @font-face {
 font-family: "OpenSans";
-    src: url("../fonts/web/opensanslight.woff2") format("woff2"); 
+    src: url("../fonts/web/opensanslight.woff2") format("woff2");
+    src: url("../fonts/web/opensanslight.woff") format("woff");
     font-weight: 300; 
 }
 
@@ -674,7 +678,8 @@ legend {
 }
 
 .catalog-main-plus:hover + .item-catalog-class,
-.site-navigation-current-plus:hover + .item-catalog-class {
+.site-navigation-current-plus:hover + .item-catalog-class,
+.item-catalog-class:hover {
     display:flex;
 }
 
@@ -698,7 +703,7 @@ legend {
 
     left:-60px;
 
-    z-index:1;
+    z-index:50;
 
     margin:0;
     padding:0;
@@ -2415,7 +2420,7 @@ input::-ms-clear {
     color:#ffffff;
 }
 
-.search-button:focus {
+.search-button:active {
     background:#000000;
     color:rgba(255, 255, 255, 0.3);
 }
@@ -2481,7 +2486,7 @@ input::-ms-clear {
     cursor: pointer;
 }
 
-.range-controls .toggle:hover {
+.range-controls .toggle:active {
     width: 5px;
     height: 5px;
     padding: 0;
