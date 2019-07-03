@@ -25,7 +25,7 @@ popupWriteForm.addEventListener("submit", function (evt) {
 popupWriteClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupWrite.classList.remove("modal-question-active");
-  popupWriteError.classList.remove("modal-question-error");
+  popupWriteError.classList.remove("question-icon-error");
 })
 
 popupMapLink.addEventListener("click", function (evt) {
