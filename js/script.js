@@ -7,7 +7,7 @@ var popupWriteLink = document.querySelector(".button-contact-us"),
     popupMap = document.querySelector(".modal-map"),
     popupWriteClose = document.querySelector(".modal-close-question"),
     popupMapClose = document.querySelector(".modal-close-map"),
-    popupWriteError = document.querySelector("")
+    popupWriteError = document.querySelector(".question-icon-user");
 
 popupWriteLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -18,7 +18,7 @@ popupWriteLink.addEventListener("click", function (evt) {
 popupWriteForm.addEventListener("submit", function (evt) {
   if (!userName.value || !userEmail.value) {
     evt.preventDefault();
-    popupWriteError.classList.add("modal-question-error");
+    popupWriteError.classList.add("question-icon-error");
   }
 })
 
