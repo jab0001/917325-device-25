@@ -195,6 +195,23 @@ a:active, a:focus {
     padding-left:36px;
 }
 
+.delivery-company li {
+    position:relative;
+}
+
+.delivery-company li:after {
+    content: "";
+    border:2px solid #e6e6e6;
+    border-radius:50%;
+    position:absolute;
+
+    top: 18px;
+    left: -35px;
+    
+    width: 4px; 
+    height: 4px;
+}
+
 .button-contact-us,
 .button-about-us {
     font-size: 18px;
@@ -859,7 +876,7 @@ legend {
 
     margin-left:125px;
     margin-right:60px;
-    margin-top:83px;
+    margin-top:85px;
 
     width:485px;
 }
@@ -954,7 +971,7 @@ legend {
 
     margin:0;
     padding:0;
-    margin-top:52px;
+    margin-top:50px;
 }
 .navigation-bar-img {
     position:relative;
@@ -1273,38 +1290,19 @@ legend {
 .contact-information {
     display:flex;
     justify-content:space-between;
-    position:relative;
+
+    width:1160px;
 
     margin-top:143px;
     height:602px;
-}
-
-.contact-information:after {
-    content: "";
-    background:#000000;
-    position: absolute;
-    top: -53px;
-    right: 1080px;
-    
-    width: 80px; 
-    height: 7px;   
-}
-
-.contact-information:before {
-    content: "";
-    background:#000000;
-    position: absolute;
-    top: -53px;
-    right: 480px;
-    
-    width: 80px; 
-    height: 7px;   
 }
 
 .about-us {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+
+    position:relative;
 
     height:504px;
 }
@@ -1314,8 +1312,32 @@ legend {
     flex-direction:column;
     justify-content:space-between;
 
+    position:relative;
+
     width:562px;
     height:562px;
+}
+
+.about-us:after {
+    content: "";
+    background:#000000;
+    position: absolute;
+    top: -53px;
+    left: 0px;
+    
+    width: 80px; 
+    height: 7px;   
+}
+
+.contacts-map:before {
+    content: "";
+    background:#000000;
+    position: absolute;
+    top: -53px;
+    left: 2px;
+    
+    width: 80px; 
+    height: 7px;   
 }
 
 .main-contacts-map {
@@ -2720,7 +2742,7 @@ input::-ms-clear {
     text-align: left;
     color: #000000;
 
-    padding-top:44px;
+    padding-top:41px;
     margin-left:59px;
 }
 
