@@ -525,8 +525,6 @@ legend {
     color: #464646;
 }
 
-/*center*/
-
 .body {
     width:100%;
     margin:0 auto;
@@ -552,8 +550,6 @@ legend {
     width: 100px; 
     height: 7px;   
 }
-
-/* сетка header*/
 
 .header-navigation {
     display:flex;
@@ -769,7 +765,6 @@ legend {
     margin:0;
     padding:0;
 }
-/*сетка main*/
 
 .first-slide {
     display:flex;
