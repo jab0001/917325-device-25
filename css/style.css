@@ -37,6 +37,11 @@ body {
 
 a {
     text-decoration: none;
+
+}
+
+a:active, a:focus { 
+    outline: none; 
 }
 
 .navigation-main {
@@ -168,6 +173,9 @@ a {
     text-align:left;
     font-weight:300;
     color:#464646;
+    letter-spacing:0.13px;	
+
+    width:511px;
 
     margin:0;
     padding:0;
@@ -229,8 +237,8 @@ a {
     opacity: 0.6;
 }
 
-.footer-first a:focus,
-.footer-first-catalog a:focus {
+.footer-first a:active,
+.footer-first-catalog a:active {
     color:rgba(255, 255, 255, 0.3);
     opacity: 0.3;
 }
@@ -384,12 +392,11 @@ legend {
 .catalog-item h3 {
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: 0.4px;
     text-align: left;
     
     margin:0;
     padding:0;
-    margin-top:28px;
+    margin-top:29px;
 }
 
 .catalog-item-price {
@@ -853,6 +860,8 @@ legend {
     margin-left:125px;
     margin-right:60px;
     margin-top:83px;
+
+    width:485px;
 }
 
 .slide-wrapper2 {
@@ -862,6 +871,8 @@ legend {
     margin-left:139px;
     margin-right:67px;
     margin-top:85px;
+
+    width:460px;
 }
 
 .slide-wrapper3 {
@@ -873,6 +884,8 @@ legend {
     margin-left:43px;
     margin-right:24px;
     margin-top:85px;
+
+    width:537px;
 }
 
 .specs-third-slider {
@@ -896,6 +909,18 @@ legend {
 .slide-wrapper3 p {
     margin-top:20px;
     margin-bottom:41px;
+}
+
+.description-slide-one {
+    width:485px;
+}
+
+.description-slide-two {
+    width:460px;
+}
+
+.description-slide-three {
+    width:455px;
 }
 
 .slide-navigation ul {
@@ -962,12 +987,22 @@ legend {
     color: #000000;
     letter-spacing: 0.18px;
 
+    z-index:1;
+    
     display:block;
 
     margin:0;
     padding:0;
     width:160px;
     padding-top:194px;
+}
+
+.navigation-bar-img:focus .navigation-bar-name {
+    opacity:0.3;
+}
+
+.monopods {
+    width:120px;
 }
 
 .services {
@@ -1144,6 +1179,14 @@ legend {
     background:#f0c52e;
 }
 
+.warranty-button:focus,
+.credit-button:focus,
+.delivery-button:focus {
+    width:278px;
+    background:#000000;
+    color:#f7e184;
+}
+
 #services-control-1:checked ~ .services-buttons .delivery-button,
 #services-control-2:checked ~ .services-buttons .warranty-button,
 #services-control-3:checked ~ .services-buttons .credit-button {
@@ -1273,6 +1316,10 @@ legend {
 
     width:562px;
     height:562px;
+}
+
+.main-contacts-map {
+    margin-left:3px;
 }
 
 .about-us h3,
@@ -1495,6 +1542,38 @@ legend {
     justify-content:space-between;
 }
 
+.selfie-stick-1 {
+    display:block;
+
+    letter-spacing: 0.3px;
+
+    width:254px;
+}
+
+.selfie-stick-2 {
+    display:block;
+
+    letter-spacing: 0.4px;
+
+    width:173px;
+}
+
+.selfie-stick-3 {
+    display:block;
+
+    letter-spacing: 0.1px;
+
+    width:262px;
+}
+
+.selfie-stick-4 {
+    display:block;
+
+    letter-spacing: 0.3px;
+
+    width:227px;
+}
+
 .catalog {
     width:972px;
     margin-top:69px;
@@ -1652,7 +1731,17 @@ legend {
     fill:rgba(0, 0, 0, 0.4);
 }
 
+.sorting-buttons svg:active,
+.sorting-buttons svg:focus {
+    fill:#231F20;
+}
+
+.sorting-buttons a:active,
 .sorting-buttons a:focus {
+    fill:#231F20;
+}
+
+.sorting-buttons .sort-button-active {
     fill:#231F20;
 }
 
@@ -1673,8 +1762,21 @@ legend {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting a:focus {
+.sorting a:focus,
+.sorting a:active {
     color: #000000;
+}
+
+.sorting .sort-active {
+    color: rgba(0, 0, 0, 1);
+}
+  
+.sorting .sort-active:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting .sort-active:active {
+    color: rgba(0, 0, 0, 1);
 }
 
 .filter-center-container {
@@ -2066,6 +2168,11 @@ legend {
     margin-top:6px;
 }
 
+.question-icon-error {
+    background-color:#f6dada;
+    border:solid 3px #f6dada;
+}
+
 .question-icon-user:hover {
     background-color: #eaeaea;
     border:solid 3px #eaeaea;
@@ -2190,11 +2297,8 @@ legend {
 }
 
 .myitems-footer-img {
-    content: "";
-
-    position: absolute;
-    top: 12px;
-    right: 70px;
+    margin-right:8px;
+    margin-top:9px;
 
     width: 12px; 
     height: 12px;   
@@ -2203,15 +2307,12 @@ legend {
 .compare-footer a {
     position:relative;
 
-    margin-right:63px;
+    margin-right:40px;
 }
 
 .compare-footer-img {
-    content: "";
-
-    position: absolute;
-    top: 7px;
-    right: 83px;
+    margin-right:8px;
+    margin-top:9px;
     
     width: 10px; 
     height: 10px;   
@@ -2220,16 +2321,13 @@ legend {
 .login-footer a {
     position:relative;
 
-    margin-right:64px;
+    margin-right:41px;
 }
 
 .login-footer-main-img {
-    content: "";
-
-    position: absolute;
-    top: 4px;
-    right: 61px;
-
+    margin-right:8px;
+    margin-top:9px;
+    
     width: 13px; 
     height: 12px;   
 }
@@ -2239,11 +2337,8 @@ legend {
 }
 
 .login-entered-footer-img {
-    content: "";
-
-    position: absolute;
-    top: 12px;
-    right: 164px;
+    margin-right:8px;
+    margin-top:9px;
 
     width: 13px; 
     height: 12px;   
@@ -2487,15 +2582,7 @@ input::-ms-clear {
 }
 
 .range-controls .toggle:active {
-    width: 5px;
-    height: 5px;
-    padding: 0;
-  
-    border: 8px solid #ffffff;
-    background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
-    border-radius:50%;
-    cursor: pointer;
+    transform:scale(1.1, 1.1);
 }
 
 .range-controls .toggle-min {
@@ -2548,6 +2635,16 @@ input::-ms-clear {
 .filter-option label:hover::before,
 .filter-option label:hover::after {
     opacity:0.6;
+}
+
+.filter-option label:active::before,
+.filter-option label:active::after {
+    opacity:1;
+}
+
+.filter-option label:focus,
+.filter-option label:focus {
+    opacity:1;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -2623,7 +2720,7 @@ input::-ms-clear {
     text-align: left;
     color: #000000;
 
-    padding-top:42px;
+    padding-top:44px;
     margin-left:59px;
 }
 
@@ -2661,12 +2758,12 @@ input::-ms-clear {
   
 .filter-range-input {
     width: 50px;
+
     margin: 0;
     padding: 0;
   
     font-weight: 300;
     font-size: 14px;
-    line-height: 24px;
     font-family: "Gilroy", "Arial", sans-serif;
     color: rgba(0, 0, 0, 0.2);
     letter-spacing: 0;
