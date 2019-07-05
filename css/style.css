@@ -409,13 +409,6 @@ a:active, a:focus {
     list-style:none;
 }
 
-legend {
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
-    text-align: left;
-}
-
 .filter-button {
     font:inherit;
     vertical-align: middle;
@@ -1060,7 +1053,7 @@ legend {
 
 .services {
     margin-top:80px;
-    height:393px;
+    min-height:393px;
 
     background: linear-gradient(to bottom, white 105px,#e5e5e5 105px,#e5e5e5 293px);
 }
@@ -1116,6 +1109,7 @@ legend {
     text-align:left;
     text-transform:uppercase;
     color: #000000;
+    vertical-align:center;
 
     box-sizing:border-box;
     border:none;
@@ -1137,49 +1131,49 @@ legend {
 
 .delivery-info {
     display:none;
-    position:relative;
+
     margin:0;
     padding:0;
     margin-left:124px;
     padding-right:324px;
 }
 
-.delivery-info::after {
+.delivery-info h3::after {
     content:"";
     position:absolute;
 
     width:136px;
     height:164px;
 
-    bottom:16px;
-    right:60px;
+    top:10px;
+    left:556px;
 
 
     background:url("../img/delivery.svg") no-repeat;
 }
 
-.warranty-info::after {
+.warranty-info h3::after {
     content:"";
     position:absolute;
 
     width:171px;
     height:194px;
 
-    bottom:9px;
-    right:40px;
+    top:-12px;
+    left:541px;
 
     background:url("../img/warranty.svg") no-repeat;
 }
 
-.credit-info::after {
+.credit-info h3::after {
     content:"";
     position:absolute;
 
     width:156px;
     height:186px;
 
-    bottom:19px;
-    right:65px;
+    top:-14px;
+    left:532px;
 
     background:url("../img/credit.svg") no-repeat;
 }
@@ -1259,6 +1253,8 @@ legend {
 .delivery-info h3,
 .warranty-info h3,
 .credit-info h3 {
+    position:relative;
+
     font-family: "Gilroy", Arial , sans-serif;
     font-size: 47px;
     line-height: 1.02;
@@ -1584,7 +1580,7 @@ legend {
 
     padding:0;
     margin:0;
-    height:960px;
+    min-height:960px;
 
 }
 
@@ -1592,7 +1588,7 @@ legend {
     position:relative;
     
     margin-left:40px;
-    margin-bottom:47px;
+    margin-top:47px;
 }
 
 .catalog-item-container {
@@ -1634,7 +1630,7 @@ legend {
 
 .catalog {
     width:972px;
-    margin-top:69px;
+    margin-top:22px;
 }
 
 .pagetree a {
@@ -1651,7 +1647,7 @@ legend {
     margin:0 auto;
     display:flex;
     flex-direction:row;
-    height:1217px;
+    min-height:1217px;
 }
 
 .filters {
@@ -1919,7 +1915,8 @@ legend {
     width:759px;
     height:70px;
     margin-left:auto;
-    margin-top:41px;
+    margin-top:36px;
+    margin-bottom:77px;
 
     background-color: #ebebeb;
 }
@@ -2705,6 +2702,16 @@ input::-ms-clear {
 .filter-option label:focus,
 .filter-option label:focus {
     opacity:1;
+}
+
+.filter-input-checkbox:disabled + label {
+    opacity: 0.25;
+    color:#a6a6a6;
+}
+
+.filter-input-radio:disabled + label {
+    opacity: 0.25;
+    color:#a6a6a6;
 }
 
 .filter-input-checkbox:checked + label::after {
